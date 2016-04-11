@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/static/styles.css?h=56bf9938">
-<link rel="stylesheet" href="/static/pygments.css">
+<link rel="stylesheet" href="../../../static/styles.css?h=56bf9938">
+<link rel="stylesheet" href="../../../static/pygments.css">
 <title>Development | Documentation | Lektor Static Content Management System</title>
 <body class="default">
   <nav class="navbar navbar-inverse navbar-static-top">
@@ -17,20 +17,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Lektor</a>
+        <a class="navbar-brand" href="../../../">Lektor</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           
-            <li><a href="/downloads/">Download</a></li>
+            <li><a href="../../../downloads/">Download</a></li>
           
-            <li class="active"><a href="/docs/">Documentation</a></li>
+            <li class="active"><a href="../../../docs/">Documentation</a></li>
           
-            <li><a href="/showcase/">Showcase</a></li>
+            <li><a href="../../../showcase/">Showcase</a></li>
           
-            <li><a href="/community/">Community</a></li>
+            <li><a href="../../../community/">Community</a></li>
           
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="../../../blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -44,62 +44,62 @@
   <div class="row">
     <div class="col-sm-3">
       <ul class="tree-nav nocontent">
-        <li><a href="/docs/">Welcome</a></li>
+        <li><a href="../../../docs/">Welcome</a></li>
         
         
-          <li><a href="/docs/what/">What is Lektor</a>
+          <li><a href="../../../docs/what/">What is Lektor</a>
             
         
-          <li><a href="/docs/installation/">Installation</a>
+          <li><a href="../../../docs/installation/">Installation</a>
             
         
-          <li><a href="/docs/quickstart/">Quickstart</a>
+          <li><a href="../../../docs/quickstart/">Quickstart</a>
             
         
-          <li><a href="/docs/project/">Project</a>
+          <li><a href="../../../docs/project/">Project</a>
             
         
-          <li><a href="/docs/content/">Content</a>
+          <li><a href="../../../docs/content/">Content</a>
             
         
-          <li><a href="/docs/templates/">Templates</a>
+          <li><a href="../../../docs/templates/">Templates</a>
             
         
-          <li><a href="/docs/guides/">Guides</a>
+          <li><a href="../../../docs/guides/">Guides</a>
             
         
-          <li><a href="/docs/deployment/">Deployment</a>
+          <li><a href="../../../docs/deployment/">Deployment</a>
             
         
-          <li><a href="/docs/plugins/">Plugins</a>
+          <li><a href="../../../docs/plugins/">Plugins</a>
             
             <ul>
-          <li><a href="/docs/plugins/list/">List</a>
+          <li><a href="../../../docs/plugins/list/">List</a>
             
         
-          <li class="active"><a href="/docs/plugins/dev/">Development</a>
+          <li class="active"><a href="../../../docs/plugins/dev/">Development</a>
             
             <ul></ul>
             
         
-          <li><a href="/docs/plugins/publishing/">Publishing</a>
+          <li><a href="../../../docs/plugins/publishing/">Publishing</a>
             
         
-          <li><a href="/docs/plugins/howto/">How To</a>
+          <li><a href="../../../docs/plugins/howto/">How To</a>
             
         </ul>
             
         
-          <li><a href="/docs/models/">Data Modelling</a>
+          <li><a href="../../../docs/models/">Data Modelling</a>
             
         
-          <li><a href="/docs/cli/">Command Line</a>
+          <li><a href="../../../docs/cli/">Command Line</a>
             
         
-          <li><a href="/docs/api/">API</a>
+          <li><a href="../../../docs/api/">API</a>
             
         
-          <li><a href="/docs/search/">Search</a>
+          <li><a href="../../../docs/search/">Search</a>
             
         
       </ul>
@@ -140,7 +140,7 @@
       <p>If you want to dive into plugin development yourself, this guide will get you
 going quickly.  Before we can get started you need to have a Lektor project
 we can temporarily add the plugin to and you need to have the <code>lektor</code>
-<a href="/docs/cli/">command line tool</a> installed.</p>
+<a href="../../../docs/cli/">command line tool</a> installed.</p>
 <h2 id="enable-development-mode">Enable Development Mode</h2><p>When developing plugins it's very useful to enable Lektor's development
 mode before starting the server.  This can be achieved by exporting the
 <code>LEKTOR_DEV</code> environment variable and setting it to <code>1</code>:</p>
@@ -153,7 +153,7 @@ when the plugin is changing.</p>
 name (typically the name of your plugin minus the <code>lektor-</code> prefix) in your
 <code>packages/</code> folder.</p>
 <p>You can either do this manually or you can use the <code>lektor dev new-plugin</code>
-command (see <a href="/docs/cli/dev/new-plugin/">new-plugin :ref</a>) which will create
+command (see <a href="../../../docs/cli/dev/new-plugin/">new-plugin :ref</a>) which will create
 this folder structure for you:</p>
 <pre><code>$ lektor dev new-plugin
 </code></pre>
@@ -253,11 +253,11 @@ can access this function from templates then:</p>
 <div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Message of the page: <span class="cp">{{</span> <span class="nv">get_random_message</span><span class="o">()</span> <span class="cp">}}</span>
 </pre></div>
 <p>There are many events that can be hooked and they can be found in the
-<a href="/docs/api/plugins/events/">Event Documentation :ref</a>.  All events need
+<a href="../../../docs/api/plugins/events/">Event Documentation :ref</a>.  All events need
 to be subscribed with an extra <code>**extra</code> argument to catch down additional
 arguments that might be supplied in the future.</p>
 <h2 id="what-plugins-can-do">What Plugins Can Do</h2><p>To understand what you can do with plugins have a look at the
-<a href="/docs/api/plugins/">Plugin API :ref</a>.</p>
+<a href="../../../docs/api/plugins/">Plugin API :ref</a>.</p>
 
 
       
@@ -315,8 +315,8 @@ arguments that might be supplied in the future.</p>
           <a href="https://github.com/lektor/lektor-website/tree/master/content/docs/plugins/dev/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
         </div>
         <div class="col-sm-8">
-          <a href="/license/">License & Copyright</a> •
-          <a href="/contact/">Contact</a> •
+          <a href="../../../license/">License & Copyright</a> •
+          <a href="../../../contact/">Contact</a> •
           Made with <i class="fa fa-fw fa-heart" title="Heart"><span hidden>Heart</span></i> in Carinthia
         </div>
       </div>
@@ -324,7 +324,7 @@ arguments that might be supplied in the future.</p>
   </footer>
   
 
-  <script type=text/javascript src="/static/app.js?h=2272e6cd" charset="utf-8"></script>
+  <script type=text/javascript src="../../../static/app.js?h=2272e6cd" charset="utf-8"></script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'lektor/lektor',

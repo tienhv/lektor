@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/static/styles.css?h=56bf9938">
-<link rel="stylesheet" href="/static/pygments.css">
+<link rel="stylesheet" href="../../../static/styles.css?h=56bf9938">
+<link rel="stylesheet" href="../../../static/pygments.css">
 <title>Paths | Documentation | Lektor Static Content Management System</title>
 <body class="default">
   <nav class="navbar navbar-inverse navbar-static-top">
@@ -17,20 +17,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Lektor</a>
+        <a class="navbar-brand" href="../../../">Lektor</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           
-            <li><a href="/downloads/">Download</a></li>
+            <li><a href="../../../downloads/">Download</a></li>
           
-            <li class="active"><a href="/docs/">Documentation</a></li>
+            <li class="active"><a href="../../../docs/">Documentation</a></li>
           
-            <li><a href="/showcase/">Showcase</a></li>
+            <li><a href="../../../showcase/">Showcase</a></li>
           
-            <li><a href="/community/">Community</a></li>
+            <li><a href="../../../community/">Community</a></li>
           
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="../../../blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -44,71 +44,71 @@
   <div class="row">
     <div class="col-sm-3">
       <ul class="tree-nav nocontent">
-        <li><a href="/docs/">Welcome</a></li>
+        <li><a href="../../../docs/">Welcome</a></li>
         
         
-          <li><a href="/docs/what/">What is Lektor</a>
+          <li><a href="../../../docs/what/">What is Lektor</a>
             
         
-          <li><a href="/docs/installation/">Installation</a>
+          <li><a href="../../../docs/installation/">Installation</a>
             
         
-          <li><a href="/docs/quickstart/">Quickstart</a>
+          <li><a href="../../../docs/quickstart/">Quickstart</a>
             
         
-          <li><a href="/docs/project/">Project</a>
+          <li><a href="../../../docs/project/">Project</a>
             
         
-          <li><a href="/docs/content/">Content</a>
+          <li><a href="../../../docs/content/">Content</a>
             
             <ul>
-          <li><a href="/docs/content/alts/">Alternatives</a>
+          <li><a href="../../../docs/content/alts/">Alternatives</a>
             
         
-          <li><a href="/docs/content/attachments/">Attachments</a>
+          <li><a href="../../../docs/content/attachments/">Attachments</a>
             
         
-          <li><a href="/docs/content/databags/">Data Bags</a>
+          <li><a href="../../../docs/content/databags/">Data Bags</a>
             
         
-          <li><a href="/docs/content/flow/">Flow</a>
+          <li><a href="../../../docs/content/flow/">Flow</a>
             
         
-          <li class="active"><a href="/docs/content/paths/">Paths</a>
+          <li class="active"><a href="../../../docs/content/paths/">Paths</a>
             
             <ul></ul>
             
         
-          <li><a href="/docs/content/system-fields/">System Fields</a>
+          <li><a href="../../../docs/content/system-fields/">System Fields</a>
             
         
-          <li><a href="/docs/content/urls/">URLs and Slugs</a>
+          <li><a href="../../../docs/content/urls/">URLs and Slugs</a>
             
         </ul>
             
         
-          <li><a href="/docs/templates/">Templates</a>
+          <li><a href="../../../docs/templates/">Templates</a>
             
         
-          <li><a href="/docs/guides/">Guides</a>
+          <li><a href="../../../docs/guides/">Guides</a>
             
         
-          <li><a href="/docs/deployment/">Deployment</a>
+          <li><a href="../../../docs/deployment/">Deployment</a>
             
         
-          <li><a href="/docs/plugins/">Plugins</a>
+          <li><a href="../../../docs/plugins/">Plugins</a>
             
         
-          <li><a href="/docs/models/">Data Modelling</a>
+          <li><a href="../../../docs/models/">Data Modelling</a>
             
         
-          <li><a href="/docs/cli/">Command Line</a>
+          <li><a href="../../../docs/cli/">Command Line</a>
             
         
-          <li><a href="/docs/api/">API</a>
+          <li><a href="../../../docs/api/">API</a>
             
         
-          <li><a href="/docs/search/">Search</a>
+          <li><a href="../../../docs/search/">Search</a>
             
         
       </ul>
@@ -148,11 +148,11 @@
 Lektor the virtual path feature is not implemented yet and a lot of this just
 does not apply.</p></div><p>Lektor attempts to map the paths from the content folder as closely as possible
 to the final URLs (at least in the default configuration).  There are various
-ways in which this can be customized (see <a href="/docs/content/urls/">URLs and Slugs :ref</a>) and
+ways in which this can be customized (see <a href="../../../docs/content/urls/">URLs and Slugs :ref</a>) and
 there are situations in which Lektor needs to render out content that does not
 actually directly correspond to a path on the file system.</p>
 <p>Here we try to explain how the path system in Lektor works and what it means.</p>
-<h2 id="what-is-a-path">What is a Path</h2><p>A path in Lektor is a string that uniquely identifies a <a href="/docs/api/db/obj/">Source Object
+<h2 id="what-is-a-path">What is a Path</h2><p>A path in Lektor is a string that uniquely identifies a <a href="../../../docs/api/db/obj/">Source Object
 :ref</a>.  For the most part these directly point to
 <code>content.lr</code> files or attachments therein.  These paths always use forward
 slashes, no matter on which platform Lektor runs.  So for instance if you
@@ -160,7 +160,7 @@ have a file named <code>projects/my-project/contents.lr</code> then the path for
 record will be <code>/projects/my-project</code>.  Thereby it does not matter if the
 slug or final URL was changed, the path is always the same.</p>
 <p>Lektor uses paths to refer to records by default in all cases.  This means that
-if you use the <a href="/docs/api/templates/filters/url/">url filter :ref</a> for instance
+if you use the <a href="../../../docs/api/templates/filters/url/">url filter :ref</a> for instance
 it will operate on paths and not URLs!</p>
 <p>But what about sources that do not directly correspond to something on the
 file system?  This is where virtual paths come in.  Virtual paths are
@@ -251,7 +251,7 @@ belong to the current page:</p>
 </tr>
 </tbody>
 </table>
-<h2 id="alternatives-and-paths">Alternatives and Paths</h2><p>If you have used Lektor a bit you might be wondering how <a href="/docs/content/alts/">Alternatives
+<h2 id="alternatives-and-paths">Alternatives and Paths</h2><p>If you have used Lektor a bit you might be wondering how <a href="../../../docs/content/alts/">Alternatives
 :ref</a> work with paths.  The answer might be surprising but it's
 basically that they don't really work with paths.  Alternatives are
 implemented on a level higher than paths.  If you have a page that exists
@@ -320,8 +320,8 @@ existing site later is a trivial matter.</p>
           <a href="https://github.com/lektor/lektor-website/tree/master/content/docs/content/paths/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
         </div>
         <div class="col-sm-8">
-          <a href="/license/">License & Copyright</a> •
-          <a href="/contact/">Contact</a> •
+          <a href="../../../license/">License & Copyright</a> •
+          <a href="../../../contact/">Contact</a> •
           Made with <i class="fa fa-fw fa-heart" title="Heart"><span hidden>Heart</span></i> in Carinthia
         </div>
       </div>
@@ -329,7 +329,7 @@ existing site later is a trivial matter.</p>
   </footer>
   
 
-  <script type=text/javascript src="/static/app.js?h=2272e6cd" charset="utf-8"></script>
+  <script type=text/javascript src="../../../static/app.js?h=2272e6cd" charset="utf-8"></script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'lektor/lektor',

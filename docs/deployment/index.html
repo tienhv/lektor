@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/static/styles.css?h=56bf9938">
-<link rel="stylesheet" href="/static/pygments.css">
+<link rel="stylesheet" href="../../static/styles.css?h=56bf9938">
+<link rel="stylesheet" href="../../static/pygments.css">
 <title>Deployment | Documentation | Lektor Static Content Management System</title>
 <body class="default">
   <nav class="navbar navbar-inverse navbar-static-top">
@@ -17,20 +17,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Lektor</a>
+        <a class="navbar-brand" href="../../">Lektor</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           
-            <li><a href="/downloads/">Download</a></li>
+            <li><a href="../../downloads/">Download</a></li>
           
-            <li class="active"><a href="/docs/">Documentation</a></li>
+            <li class="active"><a href="../../docs/">Documentation</a></li>
           
-            <li><a href="/showcase/">Showcase</a></li>
+            <li><a href="../../showcase/">Showcase</a></li>
           
-            <li><a href="/community/">Community</a></li>
+            <li><a href="../../community/">Community</a></li>
           
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="../../blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -44,63 +44,63 @@
   <div class="row">
     <div class="col-sm-3">
       <ul class="tree-nav nocontent">
-        <li><a href="/docs/">Welcome</a></li>
+        <li><a href="../../docs/">Welcome</a></li>
         
         
-          <li><a href="/docs/what/">What is Lektor</a>
+          <li><a href="../../docs/what/">What is Lektor</a>
             
         
-          <li><a href="/docs/installation/">Installation</a>
+          <li><a href="../../docs/installation/">Installation</a>
             
         
-          <li><a href="/docs/quickstart/">Quickstart</a>
+          <li><a href="../../docs/quickstart/">Quickstart</a>
             
         
-          <li><a href="/docs/project/">Project</a>
+          <li><a href="../../docs/project/">Project</a>
             
         
-          <li><a href="/docs/content/">Content</a>
+          <li><a href="../../docs/content/">Content</a>
             
         
-          <li><a href="/docs/templates/">Templates</a>
+          <li><a href="../../docs/templates/">Templates</a>
             
         
-          <li><a href="/docs/guides/">Guides</a>
+          <li><a href="../../docs/guides/">Guides</a>
             
         
-          <li class="active"><a href="/docs/deployment/">Deployment</a>
+          <li class="active"><a href="../../docs/deployment/">Deployment</a>
             
             <ul>
-          <li><a href="/docs/deployment/ftp/">FTP</a>
+          <li><a href="../../docs/deployment/ftp/">FTP</a>
             
         
-          <li><a href="/docs/deployment/ghpages/">GitHub Pages</a>
+          <li><a href="../../docs/deployment/ghpages/">GitHub Pages</a>
             
         
-          <li><a href="/docs/deployment/glpages/">GitLab Pages</a>
+          <li><a href="../../docs/deployment/glpages/">GitLab Pages</a>
             
         
-          <li><a href="/docs/deployment/rsync/">rsync</a>
+          <li><a href="../../docs/deployment/rsync/">rsync</a>
             
         
-          <li><a href="/docs/deployment/travisci/">Travis-CI</a>
+          <li><a href="../../docs/deployment/travisci/">Travis-CI</a>
             
         </ul>
             
         
-          <li><a href="/docs/plugins/">Plugins</a>
+          <li><a href="../../docs/plugins/">Plugins</a>
             
         
-          <li><a href="/docs/models/">Data Modelling</a>
+          <li><a href="../../docs/models/">Data Modelling</a>
             
         
-          <li><a href="/docs/cli/">Command Line</a>
+          <li><a href="../../docs/cli/">Command Line</a>
             
         
-          <li><a href="/docs/api/">API</a>
+          <li><a href="../../docs/api/">API</a>
             
         
-          <li><a href="/docs/search/">Search</a>
+          <li><a href="../../docs/search/">Search</a>
             
         
       </ul>
@@ -138,7 +138,7 @@
 
       <p>A website is only a website if other people can look at it.  While you are
 developing locally that's not really all that helpful.  So how do you get
-your changes up to your favorite web host?  This is where <a href="/docs/cli/deploy/">lektor deploy
+your changes up to your favorite web host?  This is where <a href="../../docs/cli/deploy/">lektor deploy
 :ref</a> comes in.</p>
 <h2 id="deploying-in-two-steps:">Deploying in Two Steps:</h2><p>Deploying a website in Lektor is a two step process:</p>
 <ol>
@@ -177,7 +177,7 @@ to set it as default.  Here is an example:</p>
 <span class="na">default</span> <span class="o">=</span> <span class="s">yes</span>
 <span class="na">target</span> <span class="o">=</span> <span class="s">rsync://server/path/to/folder</span>
 </pre></div>
-<p>To trigger a deploy you can use the <a href="/docs/cli/deploy/">deploy :ref</a> command:</p>
+<p>To trigger a deploy you can use the <a href="../../docs/cli/deploy/">deploy :ref</a> command:</p>
 <pre><code>$ lektor deploy production
 </code></pre>
 <p>Or because it's the default server, you can just do this:</p>
@@ -198,9 +198,9 @@ people get access to your server.  Alternatively you can also provide username
 and password through the command line or environment variables.</p>
 <p>The following targets are supported for the <code>target</code> field:</p>
 <ul>
-<li><a href="/docs/deployment/rsync/">rsync</a></li>
-<li><a href="/docs/deployment/ftp/">FTP</a></li>
-<li><a href="/docs/deployment/ghpages/">GitHub Pages</a></li>
+<li><a href="../../docs/deployment/rsync/">rsync</a></li>
+<li><a href="../../docs/deployment/ftp/">FTP</a></li>
+<li><a href="../../docs/deployment/ghpages/">GitHub Pages</a></li>
 </ul>
 <p>In addition, third-party plugins are available for these targets:</p>
 <ul>
@@ -225,7 +225,7 @@ publish button that can be used to send the changes up.</p>
             <div class="col-md-6 child">
               <h4>
                 <i class="glyphicon glyphicon-list-alt"></i>
-                <a href="/docs/deployment/ftp/">FTP</a>
+                <a href="../../docs/deployment/ftp/">FTP</a>
               </h4>
               
                 <p class="summary">Automatic deployments via FTP</p>
@@ -235,7 +235,7 @@ publish button that can be used to send the changes up.</p>
             <div class="col-md-6 child">
               <h4>
                 <i class="glyphicon glyphicon-list-alt"></i>
-                <a href="/docs/deployment/ghpages/">GitHub Pages</a>
+                <a href="../../docs/deployment/ghpages/">GitHub Pages</a>
               </h4>
               
                 <p class="summary">Deploys to GitHub Pages.</p>
@@ -249,7 +249,7 @@ publish button that can be used to send the changes up.</p>
             <div class="col-md-6 child">
               <h4>
                 <i class="glyphicon glyphicon-list-alt"></i>
-                <a href="/docs/deployment/glpages/">GitLab Pages</a>
+                <a href="../../docs/deployment/glpages/">GitLab Pages</a>
               </h4>
               
                 <p class="summary">Deploys to GitLab Pages.</p>
@@ -259,7 +259,7 @@ publish button that can be used to send the changes up.</p>
             <div class="col-md-6 child">
               <h4>
                 <i class="glyphicon glyphicon-list-alt"></i>
-                <a href="/docs/deployment/rsync/">rsync</a>
+                <a href="../../docs/deployment/rsync/">rsync</a>
               </h4>
               
                 <p class="summary">Automatic deployments with SSH and rsync.</p>
@@ -273,7 +273,7 @@ publish button that can be used to send the changes up.</p>
             <div class="col-md-6 child">
               <h4>
                 <i class="glyphicon glyphicon-list-alt"></i>
-                <a href="/docs/deployment/travisci/">Travis-CI</a>
+                <a href="../../docs/deployment/travisci/">Travis-CI</a>
               </h4>
               
                 <p class="summary">Automated deployments via Travis-CI.</p>
@@ -336,8 +336,8 @@ publish button that can be used to send the changes up.</p>
           <a href="https://github.com/lektor/lektor-website/tree/master/content/docs/deployment/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
         </div>
         <div class="col-sm-8">
-          <a href="/license/">License & Copyright</a> •
-          <a href="/contact/">Contact</a> •
+          <a href="../../license/">License & Copyright</a> •
+          <a href="../../contact/">Contact</a> •
           Made with <i class="fa fa-fw fa-heart" title="Heart"><span hidden>Heart</span></i> in Carinthia
         </div>
       </div>
@@ -345,7 +345,7 @@ publish button that can be used to send the changes up.</p>
   </footer>
   
 
-  <script type=text/javascript src="/static/app.js?h=2272e6cd" charset="utf-8"></script>
+  <script type=text/javascript src="../../static/app.js?h=2272e6cd" charset="utf-8"></script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'lektor/lektor',

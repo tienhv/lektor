@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/static/styles.css?h=56bf9938">
-<link rel="stylesheet" href="/static/pygments.css">
+<link rel="stylesheet" href="../../../static/styles.css?h=56bf9938">
+<link rel="stylesheet" href="../../../static/pygments.css">
 <title>How To | Documentation | Lektor Static Content Management System</title>
 <body class="default">
   <nav class="navbar navbar-inverse navbar-static-top">
@@ -17,20 +17,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Lektor</a>
+        <a class="navbar-brand" href="../../../">Lektor</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           
-            <li><a href="/downloads/">Download</a></li>
+            <li><a href="../../../downloads/">Download</a></li>
           
-            <li class="active"><a href="/docs/">Documentation</a></li>
+            <li class="active"><a href="../../../docs/">Documentation</a></li>
           
-            <li><a href="/showcase/">Showcase</a></li>
+            <li><a href="../../../showcase/">Showcase</a></li>
           
-            <li><a href="/community/">Community</a></li>
+            <li><a href="../../../community/">Community</a></li>
           
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="../../../blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -44,62 +44,62 @@
   <div class="row">
     <div class="col-sm-3">
       <ul class="tree-nav nocontent">
-        <li><a href="/docs/">Welcome</a></li>
+        <li><a href="../../../docs/">Welcome</a></li>
         
         
-          <li><a href="/docs/what/">What is Lektor</a>
+          <li><a href="../../../docs/what/">What is Lektor</a>
             
         
-          <li><a href="/docs/installation/">Installation</a>
+          <li><a href="../../../docs/installation/">Installation</a>
             
         
-          <li><a href="/docs/quickstart/">Quickstart</a>
+          <li><a href="../../../docs/quickstart/">Quickstart</a>
             
         
-          <li><a href="/docs/project/">Project</a>
+          <li><a href="../../../docs/project/">Project</a>
             
         
-          <li><a href="/docs/content/">Content</a>
+          <li><a href="../../../docs/content/">Content</a>
             
         
-          <li><a href="/docs/templates/">Templates</a>
+          <li><a href="../../../docs/templates/">Templates</a>
             
         
-          <li><a href="/docs/guides/">Guides</a>
+          <li><a href="../../../docs/guides/">Guides</a>
             
         
-          <li><a href="/docs/deployment/">Deployment</a>
+          <li><a href="../../../docs/deployment/">Deployment</a>
             
         
-          <li><a href="/docs/plugins/">Plugins</a>
+          <li><a href="../../../docs/plugins/">Plugins</a>
             
             <ul>
-          <li><a href="/docs/plugins/list/">List</a>
+          <li><a href="../../../docs/plugins/list/">List</a>
             
         
-          <li><a href="/docs/plugins/dev/">Development</a>
+          <li><a href="../../../docs/plugins/dev/">Development</a>
             
         
-          <li><a href="/docs/plugins/publishing/">Publishing</a>
+          <li><a href="../../../docs/plugins/publishing/">Publishing</a>
             
         
-          <li class="active"><a href="/docs/plugins/howto/">How To</a>
+          <li class="active"><a href="../../../docs/plugins/howto/">How To</a>
             
             <ul></ul>
             
         </ul>
             
         
-          <li><a href="/docs/models/">Data Modelling</a>
+          <li><a href="../../../docs/models/">Data Modelling</a>
             
         
-          <li><a href="/docs/cli/">Command Line</a>
+          <li><a href="../../../docs/cli/">Command Line</a>
             
         
-          <li><a href="/docs/api/">API</a>
+          <li><a href="../../../docs/api/">API</a>
             
         
-          <li><a href="/docs/search/">Search</a>
+          <li><a href="../../../docs/search/">Search</a>
             
         
       </ul>
@@ -188,14 +188,14 @@ depending on the situation you might have to use two different mechanisms.</p>
 <ol>
 <li><strong>Dependency tracking by association</strong>: while a build of a source object
 into an artifact is active more dependencies for that artifact can be
-registered with the <a href="/docs/api/build/context/record-dependency/">record_dependency :ref</a>
+registered with the <a href="../../../docs/api/build/context/record-dependency/">record_dependency :ref</a>
 method of the context.  It takes a filename that should be recorded as
 additional dependency for the current artifact</li>
 <li><strong>Dependency tracking as artifact source</strong>: if you build your own artifact
 you need to define the source files that make up the artifact (if you have
 such a thing).  For instance if you build a thumbnail you will need to
 track those source files that are the source images.  This can be done
-through the <a href="/docs/api/build/context/sub-artifact/">sub_artifact :ref</a>
+through the <a href="../../../docs/api/build/context/sub-artifact/">sub_artifact :ref</a>
 method which declares a new artifact.</li>
 </ol>
 <p>Here examples for both of those in one:</p>
@@ -221,8 +221,8 @@ method which declares a new artifact.</li>
 The source image is tracked as direct source for the artifact and within the
 function we also track the plugin's filename to rebuild if the plugin changes.</p>
 <h2 id="adding-new-field-types">Adding New Field Types</h2><p>Let's say you want to add an "asciidoc"
-<a href="/docs/api/db/types/">field type :ref</a> so you can write with <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> markup.</p>
-<p>First <a href="http://www.methods.co.nz/asciidoc/INSTALL.html">install AsciiDoc</a> so its command-line program is available. Then update <code>blog-post.ini</code> from the <a href="/docs/guides/blog">blog guide :ref</a> like so:</p>
+<a href="../../../docs/api/db/types/">field type :ref</a> so you can write with <a href="http://www.methods.co.nz/asciidoc">AsciiDoc</a> markup.</p>
+<p>First <a href="http://www.methods.co.nz/asciidoc/INSTALL.html">install AsciiDoc</a> so its command-line program is available. Then update <code>blog-post.ini</code> from the <a href="../../../docs/guides/blog">blog guide :ref</a> like so:</p>
 <div class="highlight"><pre><span></span><span class="k">[fields.body]</span>
 <span class="na">label</span> <span class="o">=</span> <span class="s">Body</span>
 <span class="na">type</span> <span class="o">=</span> <span class="s">asciidoc  # Custom type.</span>
@@ -341,8 +341,8 @@ code here
           <a href="https://github.com/lektor/lektor-website/tree/master/content/docs/plugins/howto/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
         </div>
         <div class="col-sm-8">
-          <a href="/license/">License & Copyright</a> •
-          <a href="/contact/">Contact</a> •
+          <a href="../../../license/">License & Copyright</a> •
+          <a href="../../../contact/">Contact</a> •
           Made with <i class="fa fa-fw fa-heart" title="Heart"><span hidden>Heart</span></i> in Carinthia
         </div>
       </div>
@@ -350,7 +350,7 @@ code here
   </footer>
   
 
-  <script type=text/javascript src="/static/app.js?h=2272e6cd" charset="utf-8"></script>
+  <script type=text/javascript src="../../../static/app.js?h=2272e6cd" charset="utf-8"></script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'lektor/lektor',

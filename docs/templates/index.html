@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/static/styles.css?h=56bf9938">
-<link rel="stylesheet" href="/static/pygments.css">
+<link rel="stylesheet" href="../../static/styles.css?h=56bf9938">
+<link rel="stylesheet" href="../../static/pygments.css">
 <title>Templates | Documentation | Lektor Static Content Management System</title>
 <body class="default">
   <nav class="navbar navbar-inverse navbar-static-top">
@@ -17,20 +17,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Lektor</a>
+        <a class="navbar-brand" href="../../">Lektor</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           
-            <li><a href="/downloads/">Download</a></li>
+            <li><a href="../../downloads/">Download</a></li>
           
-            <li class="active"><a href="/docs/">Documentation</a></li>
+            <li class="active"><a href="../../docs/">Documentation</a></li>
           
-            <li><a href="/showcase/">Showcase</a></li>
+            <li><a href="../../showcase/">Showcase</a></li>
           
-            <li><a href="/community/">Community</a></li>
+            <li><a href="../../community/">Community</a></li>
           
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="../../blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -44,57 +44,57 @@
   <div class="row">
     <div class="col-sm-3">
       <ul class="tree-nav nocontent">
-        <li><a href="/docs/">Welcome</a></li>
+        <li><a href="../../docs/">Welcome</a></li>
         
         
-          <li><a href="/docs/what/">What is Lektor</a>
+          <li><a href="../../docs/what/">What is Lektor</a>
             
         
-          <li><a href="/docs/installation/">Installation</a>
+          <li><a href="../../docs/installation/">Installation</a>
             
         
-          <li><a href="/docs/quickstart/">Quickstart</a>
+          <li><a href="../../docs/quickstart/">Quickstart</a>
             
         
-          <li><a href="/docs/project/">Project</a>
+          <li><a href="../../docs/project/">Project</a>
             
         
-          <li><a href="/docs/content/">Content</a>
+          <li><a href="../../docs/content/">Content</a>
             
         
-          <li class="active"><a href="/docs/templates/">Templates</a>
+          <li class="active"><a href="../../docs/templates/">Templates</a>
             
             <ul>
-          <li><a href="/docs/templates/urls/">URLs and Links</a>
+          <li><a href="../../docs/templates/urls/">URLs and Links</a>
             
         
-          <li><a href="/docs/templates/navigation/">Navigation</a>
+          <li><a href="../../docs/templates/navigation/">Navigation</a>
             
         
-          <li><a href="/docs/templates/imageops/">Image Operations</a>
+          <li><a href="../../docs/templates/imageops/">Image Operations</a>
             
         </ul>
             
         
-          <li><a href="/docs/guides/">Guides</a>
+          <li><a href="../../docs/guides/">Guides</a>
             
         
-          <li><a href="/docs/deployment/">Deployment</a>
+          <li><a href="../../docs/deployment/">Deployment</a>
             
         
-          <li><a href="/docs/plugins/">Plugins</a>
+          <li><a href="../../docs/plugins/">Plugins</a>
             
         
-          <li><a href="/docs/models/">Data Modelling</a>
+          <li><a href="../../docs/models/">Data Modelling</a>
             
         
-          <li><a href="/docs/cli/">Command Line</a>
+          <li><a href="../../docs/cli/">Command Line</a>
             
         
-          <li><a href="/docs/api/">API</a>
+          <li><a href="../../docs/api/">API</a>
             
         
-          <li><a href="/docs/search/">Search</a>
+          <li><a href="../../docs/search/">Search</a>
             
         
       </ul>
@@ -139,7 +139,7 @@ powers of the templating language then you can learn more about it by
 reading the <a href="http://jinja.pocoo.org/docs">Jinja2 Documentation :ext</a>.</p>
 <div class="admonition admonition-info"><p>Templates are a very powerful component in Lektor.  A lot of documentation
 about the features of it can be found in the <a href="http://jinja.pocoo.org/docs">Jinja2 Documentation
-:ext</a> as well as the <a href="/docs/api/templates/">Lektor Template API
+:ext</a> as well as the <a href="../../docs/api/templates/">Lektor Template API
 Documentation :ext</a>.</p></div><h2 id="template-folder-and-naming">Template Folder and Naming</h2><p>All templates are stored within the <code>templates/</code> folder.  Templates typically
 carry a <code>.html</code> extension.  The default naming convention which is used in
 Lektor is that the template name matches the model name.</p>
@@ -158,15 +158,15 @@ evaluated in but the following are always available:</p>
 <tbody>
 <tr>
 <td><code>this</code></td>
-<td>The current <a href="/docs/api/db/record/">Record :ref</a> that is being rendered.</td>
+<td>The current <a href="../../docs/api/db/record/">Record :ref</a> that is being rendered.</td>
 </tr>
 <tr>
 <td><code>site</code></td>
-<td>The database <a href="/docs/api/db/pad/">Pad :ref</a> that can be used to query the site.</td>
+<td>The database <a href="../../docs/api/db/pad/">Pad :ref</a> that can be used to query the site.</td>
 </tr>
 <tr>
 <td><code>alt</code></td>
-<td>A string that identifies the <a href="/docs/content/alts/">Alternative :ref</a> of the page.</td>
+<td>A string that identifies the <a href="../../docs/content/alts/">Alternative :ref</a> of the page.</td>
 </tr>
 <tr>
 <td><code>config</code></td>
@@ -175,9 +175,9 @@ evaluated in but the following are always available:</p>
 </tbody>
 </table>
 <h2 id="the-first-template">The First Template</h2><p>So let's dive in making our first template.  In case you went through the
-<a href="/docs/quickstart/">Quickstart :ref</a> you should already have an example model
+<a href="../../docs/quickstart/">Quickstart :ref</a> you should already have an example model
 to work with called <code>page</code>, otherwise just add one with the format shown
-in the <a href="/docs/models/">Data Modelling Documentation :ref</a>.</p>
+in the <a href="../../docs/models/">Data Modelling Documentation :ref</a>.</p>
 <p>With that we can create a page template named <code>templates/page.html</code>:</p>
 <div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;layout.html&quot;</span> <span class="cp">%}</span>
 <span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}{{</span> <span class="nv">this.title</span> <span class="cp">}}{%</span> <span class="k">endblock</span> <span class="cp">%}</span>
@@ -236,7 +236,7 @@ you can do with it.</p>
             <div class="col-md-6 child">
               <h4>
                 <i class="glyphicon glyphicon-list-alt"></i>
-                <a href="/docs/templates/urls/">URLs and Links</a>
+                <a href="../../docs/templates/urls/">URLs and Links</a>
               </h4>
               
                 <p class="summary">Explains how to manage URLs and links in templates.</p>
@@ -246,7 +246,7 @@ you can do with it.</p>
             <div class="col-md-6 child">
               <h4>
                 <i class="glyphicon glyphicon-list-alt"></i>
-                <a href="/docs/templates/navigation/">Navigation</a>
+                <a href="../../docs/templates/navigation/">Navigation</a>
               </h4>
               
                 <p class="summary">Shows how to create a dynamic navigation with Lektor.</p>
@@ -260,7 +260,7 @@ you can do with it.</p>
             <div class="col-md-6 child">
               <h4>
                 <i class="glyphicon glyphicon-list-alt"></i>
-                <a href="/docs/templates/imageops/">Image Operations</a>
+                <a href="../../docs/templates/imageops/">Image Operations</a>
               </h4>
               
                 <p class="summary">Shows how templates can work with images.</p>
@@ -323,8 +323,8 @@ you can do with it.</p>
           <a href="https://github.com/lektor/lektor-website/tree/master/content/docs/templates/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
         </div>
         <div class="col-sm-8">
-          <a href="/license/">License & Copyright</a> •
-          <a href="/contact/">Contact</a> •
+          <a href="../../license/">License & Copyright</a> •
+          <a href="../../contact/">Contact</a> •
           Made with <i class="fa fa-fw fa-heart" title="Heart"><span hidden>Heart</span></i> in Carinthia
         </div>
       </div>
@@ -332,7 +332,7 @@ you can do with it.</p>
   </footer>
   
 
-  <script type=text/javascript src="/static/app.js?h=2272e6cd" charset="utf-8"></script>
+  <script type=text/javascript src="../../static/app.js?h=2272e6cd" charset="utf-8"></script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'lektor/lektor',

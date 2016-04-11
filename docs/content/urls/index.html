@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/static/styles.css?h=56bf9938">
-<link rel="stylesheet" href="/static/pygments.css">
+<link rel="stylesheet" href="../../../static/styles.css?h=56bf9938">
+<link rel="stylesheet" href="../../../static/pygments.css">
 <title>URLs and Slugs | Documentation | Lektor Static Content Management System</title>
 <body class="default">
   <nav class="navbar navbar-inverse navbar-static-top">
@@ -17,20 +17,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Lektor</a>
+        <a class="navbar-brand" href="../../../">Lektor</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           
-            <li><a href="/downloads/">Download</a></li>
+            <li><a href="../../../downloads/">Download</a></li>
           
-            <li class="active"><a href="/docs/">Documentation</a></li>
+            <li class="active"><a href="../../../docs/">Documentation</a></li>
           
-            <li><a href="/showcase/">Showcase</a></li>
+            <li><a href="../../../showcase/">Showcase</a></li>
           
-            <li><a href="/community/">Community</a></li>
+            <li><a href="../../../community/">Community</a></li>
           
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="../../../blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -44,71 +44,71 @@
   <div class="row">
     <div class="col-sm-3">
       <ul class="tree-nav nocontent">
-        <li><a href="/docs/">Welcome</a></li>
+        <li><a href="../../../docs/">Welcome</a></li>
         
         
-          <li><a href="/docs/what/">What is Lektor</a>
+          <li><a href="../../../docs/what/">What is Lektor</a>
             
         
-          <li><a href="/docs/installation/">Installation</a>
+          <li><a href="../../../docs/installation/">Installation</a>
             
         
-          <li><a href="/docs/quickstart/">Quickstart</a>
+          <li><a href="../../../docs/quickstart/">Quickstart</a>
             
         
-          <li><a href="/docs/project/">Project</a>
+          <li><a href="../../../docs/project/">Project</a>
             
         
-          <li><a href="/docs/content/">Content</a>
+          <li><a href="../../../docs/content/">Content</a>
             
             <ul>
-          <li><a href="/docs/content/alts/">Alternatives</a>
+          <li><a href="../../../docs/content/alts/">Alternatives</a>
             
         
-          <li><a href="/docs/content/attachments/">Attachments</a>
+          <li><a href="../../../docs/content/attachments/">Attachments</a>
             
         
-          <li><a href="/docs/content/databags/">Data Bags</a>
+          <li><a href="../../../docs/content/databags/">Data Bags</a>
             
         
-          <li><a href="/docs/content/flow/">Flow</a>
+          <li><a href="../../../docs/content/flow/">Flow</a>
             
         
-          <li><a href="/docs/content/paths/">Paths</a>
+          <li><a href="../../../docs/content/paths/">Paths</a>
             
         
-          <li><a href="/docs/content/system-fields/">System Fields</a>
+          <li><a href="../../../docs/content/system-fields/">System Fields</a>
             
         
-          <li class="active"><a href="/docs/content/urls/">URLs and Slugs</a>
+          <li class="active"><a href="../../../docs/content/urls/">URLs and Slugs</a>
             
             <ul></ul>
             
         </ul>
             
         
-          <li><a href="/docs/templates/">Templates</a>
+          <li><a href="../../../docs/templates/">Templates</a>
             
         
-          <li><a href="/docs/guides/">Guides</a>
+          <li><a href="../../../docs/guides/">Guides</a>
             
         
-          <li><a href="/docs/deployment/">Deployment</a>
+          <li><a href="../../../docs/deployment/">Deployment</a>
             
         
-          <li><a href="/docs/plugins/">Plugins</a>
+          <li><a href="../../../docs/plugins/">Plugins</a>
             
         
-          <li><a href="/docs/models/">Data Modelling</a>
+          <li><a href="../../../docs/models/">Data Modelling</a>
             
         
-          <li><a href="/docs/cli/">Command Line</a>
+          <li><a href="../../../docs/cli/">Command Line</a>
             
         
-          <li><a href="/docs/api/">API</a>
+          <li><a href="../../../docs/api/">API</a>
             
         
-          <li><a href="/docs/search/">Search</a>
+          <li><a href="../../../docs/search/">Search</a>
             
         
       </ul>
@@ -173,13 +173,13 @@ to adjust the slug.</p>
 for all models automatically and overrides the slug explicitly.  This is
 particularly useful to force a slug that could not be represented on the file
 system (for instance because it should contain a slash) or because you want
-to change the slug for a different <a href="/docs/content/alts/">Alternative :ref</a>.  As
+to change the slug for a different <a href="../../../docs/content/alts/">Alternative :ref</a>.  As
 an example a page translated to German might want to translate the slug as well.</p>
 <h3 id="implied-slug-configuration">Implied Slug Configuration</h3><p>The last part is a system that controls the implied slugs.  In particular it
 means that the model of the parent page can override the default slug for all
 of the children below it.  This for instance can be used to automatically add
 the date of a blog post into the slug.  For more information about this
-feature see <a href="/docs/models/children/">Children &amp; Pagination :ref</a>.</p>
+feature see <a href="../../../docs/models/children/">Children &amp; Pagination :ref</a>.</p>
 <h2 id="slugs-containing-slashes">Slugs Containing Slashes</h2><p>Slugs can indeed contain slashes. It's perfectly valid for a page to have 
 <code>2015/5/demo</code> as slug, and it will still be incorporated into URLs as described
 above.  What's not possible is for a page to pretend that it belongs to a 
@@ -219,7 +219,7 @@ an absolute or fully canonical (external) URL.  For instance sitemaps or Atom
 feeds do not work with relative URLs.  In this case the absolute URL path has
 to be configured.</p>
 <p>You can pick the default for URL generation in the project configuration.
-For more information read about the <a href="/docs/project/file/#[project]">Project Configuration
+For more information read about the <a href="../../../docs/project/file/#[project]">Project Configuration
 :ref</a>.</p>
 <p>The default of <code>relative</code>, a relative URL style, means that you can deploy a
 website to a sub folder without any configuration, however most likely custom
@@ -282,8 +282,8 @@ recommended as default style.</p>
           <a href="https://github.com/lektor/lektor-website/tree/master/content/docs/content/urls/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
         </div>
         <div class="col-sm-8">
-          <a href="/license/">License & Copyright</a> •
-          <a href="/contact/">Contact</a> •
+          <a href="../../../license/">License & Copyright</a> •
+          <a href="../../../contact/">Contact</a> •
           Made with <i class="fa fa-fw fa-heart" title="Heart"><span hidden>Heart</span></i> in Carinthia
         </div>
       </div>
@@ -291,7 +291,7 @@ recommended as default style.</p>
   </footer>
   
 
-  <script type=text/javascript src="/static/app.js?h=2272e6cd" charset="utf-8"></script>
+  <script type=text/javascript src="../../../static/app.js?h=2272e6cd" charset="utf-8"></script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'lektor/lektor',

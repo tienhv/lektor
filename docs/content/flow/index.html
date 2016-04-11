@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/static/styles.css?h=56bf9938">
-<link rel="stylesheet" href="/static/pygments.css">
+<link rel="stylesheet" href="../../../static/styles.css?h=56bf9938">
+<link rel="stylesheet" href="../../../static/pygments.css">
 <title>Flow | Documentation | Lektor Static Content Management System</title>
 <body class="default">
   <nav class="navbar navbar-inverse navbar-static-top">
@@ -17,20 +17,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Lektor</a>
+        <a class="navbar-brand" href="../../../">Lektor</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           
-            <li><a href="/downloads/">Download</a></li>
+            <li><a href="../../../downloads/">Download</a></li>
           
-            <li class="active"><a href="/docs/">Documentation</a></li>
+            <li class="active"><a href="../../../docs/">Documentation</a></li>
           
-            <li><a href="/showcase/">Showcase</a></li>
+            <li><a href="../../../showcase/">Showcase</a></li>
           
-            <li><a href="/community/">Community</a></li>
+            <li><a href="../../../community/">Community</a></li>
           
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="../../../blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -44,71 +44,71 @@
   <div class="row">
     <div class="col-sm-3">
       <ul class="tree-nav nocontent">
-        <li><a href="/docs/">Welcome</a></li>
+        <li><a href="../../../docs/">Welcome</a></li>
         
         
-          <li><a href="/docs/what/">What is Lektor</a>
+          <li><a href="../../../docs/what/">What is Lektor</a>
             
         
-          <li><a href="/docs/installation/">Installation</a>
+          <li><a href="../../../docs/installation/">Installation</a>
             
         
-          <li><a href="/docs/quickstart/">Quickstart</a>
+          <li><a href="../../../docs/quickstart/">Quickstart</a>
             
         
-          <li><a href="/docs/project/">Project</a>
+          <li><a href="../../../docs/project/">Project</a>
             
         
-          <li><a href="/docs/content/">Content</a>
+          <li><a href="../../../docs/content/">Content</a>
             
             <ul>
-          <li><a href="/docs/content/alts/">Alternatives</a>
+          <li><a href="../../../docs/content/alts/">Alternatives</a>
             
         
-          <li><a href="/docs/content/attachments/">Attachments</a>
+          <li><a href="../../../docs/content/attachments/">Attachments</a>
             
         
-          <li><a href="/docs/content/databags/">Data Bags</a>
+          <li><a href="../../../docs/content/databags/">Data Bags</a>
             
         
-          <li class="active"><a href="/docs/content/flow/">Flow</a>
+          <li class="active"><a href="../../../docs/content/flow/">Flow</a>
             
             <ul></ul>
             
         
-          <li><a href="/docs/content/paths/">Paths</a>
+          <li><a href="../../../docs/content/paths/">Paths</a>
             
         
-          <li><a href="/docs/content/system-fields/">System Fields</a>
+          <li><a href="../../../docs/content/system-fields/">System Fields</a>
             
         
-          <li><a href="/docs/content/urls/">URLs and Slugs</a>
+          <li><a href="../../../docs/content/urls/">URLs and Slugs</a>
             
         </ul>
             
         
-          <li><a href="/docs/templates/">Templates</a>
+          <li><a href="../../../docs/templates/">Templates</a>
             
         
-          <li><a href="/docs/guides/">Guides</a>
+          <li><a href="../../../docs/guides/">Guides</a>
             
         
-          <li><a href="/docs/deployment/">Deployment</a>
+          <li><a href="../../../docs/deployment/">Deployment</a>
             
         
-          <li><a href="/docs/plugins/">Plugins</a>
+          <li><a href="../../../docs/plugins/">Plugins</a>
             
         
-          <li><a href="/docs/models/">Data Modelling</a>
+          <li><a href="../../../docs/models/">Data Modelling</a>
             
         
-          <li><a href="/docs/cli/">Command Line</a>
+          <li><a href="../../../docs/cli/">Command Line</a>
             
         
-          <li><a href="/docs/api/">API</a>
+          <li><a href="../../../docs/api/">API</a>
             
         
-          <li><a href="/docs/search/">Search</a>
+          <li><a href="../../../docs/search/">Search</a>
             
         
       </ul>
@@ -145,23 +145,23 @@
       </ul>
 
       <p>Flow is a system in Lektor that allows you to have higher flexibility when
-creating pages.  The <a href="/docs/api/db/types/flow/">Flow Type :ref</a> field type
+creating pages.  The <a href="../../../docs/api/db/types/flow/">Flow Type :ref</a> field type
 that allows you to store multiple different formats of data within the same
 field each with its own template.</p>
 <p>This allows you to build complex pages made from individual components.</p>
 <h2 id="how-does-flow-work?">How does Flow Work?</h2><p>When you add a <code>flow</code> field to one of your models you essentially gain the
 ability to attach as many blocks as you want into this field.  Each block
-corresponds to a specific <a href="/docs/models/flow/">Flow Block Model :ref</a> and
+corresponds to a specific <a href="../../../docs/models/flow/">Flow Block Model :ref</a> and
 can render a separate template.</p>
 <p>This is a very powerful feature as it allows you to be very flexible in the
 designs you want to achieve for your website.  As an example, the
-<a href="/">Front Page</a> of this website uses many different blocks to
+<a href="../../../">Front Page</a> of this website uses many different blocks to
 implement the slideshow, feature list and more.</p>
 <p><img src="flow-admin.png" class="screenshot" alt=""></p>
 <h2 id="flow-block-models">Flow Block Models</h2><p>To use the <code>flow</code> type you need to define some blocks.  This works pretty
-much the same as with creating <a href="/docs/models/">Data Models :ref</a> except they
+much the same as with creating <a href="../../../docs/models/">Data Models :ref</a> except they
 go into the <code>flowblocks</code> folder and have slightly different parameters.</p>
-<p>For more information about this see <a href="/docs/models/flow/">Flow Block Models
+<p>For more information about this see <a href="../../../docs/models/flow/">Flow Block Models
 :ref</a>.</p>
 <h2 id="block-templating">Block Templating</h2><p>Flow blocks appear as elements of the flow type.  When it's rendered in a
 template it will render each block separately one after another and connect
@@ -272,8 +272,8 @@ using their templates:</p>
           <a href="https://github.com/lektor/lektor-website/tree/master/content/docs/content/flow/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
         </div>
         <div class="col-sm-8">
-          <a href="/license/">License & Copyright</a> •
-          <a href="/contact/">Contact</a> •
+          <a href="../../../license/">License & Copyright</a> •
+          <a href="../../../contact/">Contact</a> •
           Made with <i class="fa fa-fw fa-heart" title="Heart"><span hidden>Heart</span></i> in Carinthia
         </div>
       </div>
@@ -281,7 +281,7 @@ using their templates:</p>
   </footer>
   
 
-  <script type=text/javascript src="/static/app.js?h=2272e6cd" charset="utf-8"></script>
+  <script type=text/javascript src="../../../static/app.js?h=2272e6cd" charset="utf-8"></script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'lektor/lektor',

@@ -19,7 +19,7 @@
       <name>Armin Ronacher</name>
     </author>
     <content type="html">
-&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(/blog/2016/4/lektor-2-released/banner.jpg)&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(../../../../blog/2016/4/lektor-2-released/banner.jpg)&quot;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;text-block text-block-default&quot;&gt;
   &lt;p&gt;After quite a bit of wait, I'm happy to announce the 2.0 release of Lektor.
@@ -95,7 +95,7 @@ the already existing one.&lt;/p&gt;
       <name>Armin Ronacher</name>
     </author>
     <content type="html">
-&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(/blog/2016/3/lektor-at-rails-girls-summer-of-code/banner.jpg)&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(../../../../blog/2016/3/lektor-at-rails-girls-summer-of-code/banner.jpg)&quot;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;text-block text-block-default&quot;&gt;
   &lt;p&gt;I'm happy to announce that Lektor is participating as a project in this year's
@@ -131,7 +131,7 @@ class=&quot;js-gitter-toggle-chat-button&quot;&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
       <name>Armin Ronacher</name>
     </author>
     <content type="html">
-&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(/blog/2016/3/road-to-lektor-2/header.jpg)&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(../../../../blog/2016/3/road-to-lektor-2/header.jpg)&quot;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;text-block text-block-default&quot;&gt;
   &lt;p&gt;It's great to see what people have been building with Lektor so far. It also
@@ -186,7 +186,7 @@ source tree.  For instance you can build feeds, blog archives etc.&lt;/li&gt;
       <name>Armin Ronacher</name>
     </author>
     <content type="html">
-&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(/blog/2015/12/travis-and-ghpages/header.jpg)&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(../../../../blog/2015/12/travis-and-ghpages/header.jpg)&quot;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;text-block text-block-default&quot;&gt;
   &lt;p&gt;Open Source projects need websites, that's a given, and one of the most popular
@@ -197,7 +197,7 @@ hosts a git repository as a website on a subdomain of &lt;code&gt;github.io&lt;/
 out you can with the help of &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis-CI :ext&lt;/a&gt;.  Because
 Lektor has built-in support for deploying to GitHub Pages pairing up the three
 is a breeze.&lt;/p&gt;
-&lt;p&gt;We &lt;a href=&quot;/docs/deployment/travisci/&quot;&gt;created a guide :ref&lt;/a&gt; and also recorded
+&lt;p&gt;We &lt;a href=&quot;../../../../docs/deployment/travisci/&quot;&gt;created a guide :ref&lt;/a&gt; and also recorded
 a screencast that goes with it:&lt;/p&gt;
 &lt;iframe width=&quot;100%&quot; height=410 frameborder=&quot;0&quot; allowfullscreen=&quot;allowfullscreen&quot;
   src=&quot;https://www.youtube.com/embed/3pj_EyZIL5A?autoplay=0&amp;fs=1&quot;&gt;
@@ -213,7 +213,7 @@ a screencast that goes with it:&lt;/p&gt;
       <name>Armin Ronacher</name>
     </author>
     <content type="html">
-&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(/blog/2015/12/hello-lektor/banner.jpg)&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(../../../../blog/2015/12/hello-lektor/banner.jpg)&quot;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;text-block text-block-default&quot;&gt;
   &lt;p&gt;About &lt;a href=&quot;http://w3techs.com/technologies/details/cm-wordpress/all/all&quot;&gt;25% of the Internet uses
@@ -270,7 +270,7 @@ Desktop version or maybe in the future use a cloud hosted version.&lt;/p&gt;
 &lt;h2 id=&quot;project-layout&quot;&gt;Project Layout&lt;/h2&gt;&lt;p&gt;To get an idea how it works, you can have a look at the &lt;a href=&quot;https://github.com/lektor/lektor-website/&quot;&gt;github repository of
 this website&lt;/a&gt; which contains the
 project for this website and blog and have a look at the introduction
-documentation: &lt;a href=&quot;/docs/quickstart/&quot;&gt;Getting Started :ref&lt;/a&gt;.  You can
+documentation: &lt;a href=&quot;../../../../docs/quickstart/&quot;&gt;Getting Started :ref&lt;/a&gt;.  You can
 also find a screencast there.&lt;/p&gt;
 &lt;p&gt;On a very basic level Lektor takes &lt;code&gt;.lr&lt;/code&gt; files which are basic text files
 with a super simple format and generates out HTML files.  The &lt;code&gt;.lr&lt;/code&gt; files
@@ -287,7 +287,7 @@ elaborate ones if you want to build portfolio sites.  For instance you could
 set up models for your projects and then access that data in the templates.&lt;/p&gt;
 &lt;p&gt;The content files are stored in folders in a tree like structure and at any
 level you can add other files as attachments:&lt;/p&gt;
-&lt;div class=&quot;screenshot-frame&quot;&gt;&lt;img src=&quot;structure.png&quot;&gt;&lt;/div&gt;&lt;h2 id=&quot;an-open-source-project&quot;&gt;An Open Source Project&lt;/h2&gt;&lt;p&gt;Lektor is available under &lt;a href=&quot;/license/&quot;&gt;a BSD license&lt;/a&gt; and run as a
+&lt;div class=&quot;screenshot-frame&quot;&gt;&lt;img src=&quot;structure.png&quot;&gt;&lt;/div&gt;&lt;h2 id=&quot;an-open-source-project&quot;&gt;An Open Source Project&lt;/h2&gt;&lt;p&gt;Lektor is available under &lt;a href=&quot;../../../../license/&quot;&gt;a BSD license&lt;/a&gt; and run as a
 community Open Source project &lt;a href=&quot;https://github.com/lektor/lektor/&quot;&gt;on github :ext&lt;/a&gt;.
 The build system is written in Python, the UI in JavaScript with React and
 the GUI components use Electron.&lt;/p&gt;
