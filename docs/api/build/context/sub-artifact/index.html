@@ -197,13 +197,14 @@ that they are responsible for creating this artifact.  It can be left empty
 in which case the artifact just tracks the current file.  The <code>source_obj</code>
 can optionally point to a source object but for most plugins this will never
 be set.</p>
-<p>The artifact passed to the function is then the <a href="../../artifact/" class="ref">Artifact</a>
+<p>The artifact passed to the function is then the <a href="/docs/api/build/artifact/">Artifact :ref</a>
 object for modification.  Note that the function will not be invoked if the
 artifact is already considered up to date.</p>
 <p>In addition a <code>config_hash</code> can be provided with can be a hash value.  If
 provided it can identify the configuration that the artifact was created
 from.  If the hash changes the artifact will be rebuilt.  Such a hash
-can for instance be generated with <a href="../../../utils/get-structure-hash/" class="ref">get_structure_hash</a>.</p>
+can for instance be generated with <a href="/docs/api/utils/get-structure-hash/">get_structure_hash
+:ref</a>.</p>
 <h2 id="example">Example</h2><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">lektor.pluginsystem</span> <span class="kn">import</span> <span class="n">Plugin</span>
 

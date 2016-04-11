@@ -168,7 +168,7 @@ not having them would be a violation of the specification.</p>
 </blockquote>
 <p><code>url_style</code></p>
 <blockquote><p>This controls the style of generated URL references through the
-<a href="../../api/utils/url-to/" class="ref">url_to</a> function or filters.  The default
+<a href="/docs/api/utils/url-to/">url_to :ref</a> function or filters.  The default
 value for this is <code>relative</code>.  The following values are possible:</p>
 <table>
 <thead><tr>
@@ -198,7 +198,8 @@ which for instance breaks custom error pages.  <code>absolute</code> is useful f
 situations where you have custom error pages and you generally know a bit
 about the server you are deploying to.  <code>external</code> generally makes not a lot
 of sense as default setting but exists for consistency's sake.</p>
-<p>For individual URLs that are generated with the <a href="../../api/utils/url-to/" class="ref">url_to</a> function it's possible to override the
+<p>For individual URLs that are generated with the <a href="/docs/api/utils/url-to/">url_to
+:ref</a> function it's possible to override the
 default URL style.</p>
 </blockquote>
 <p><code>path</code></p>
@@ -246,7 +247,7 @@ name and the value is the version number.</p>
 <h3 id="[servers.-]"><code>[servers.*]</code></h3><p>This section can be repeated and each instance sets up a server.  The <code>*</code>
 needs to be replaced with the ID of the server.  This ID is used by the
 command line tool to select the server to deploy to.  For more information
-about this see the <a href="../../deployment/" class="ref">Deployment Guide</a></p>
+about this see the <a href="/docs/deployment/">Deployment Guide :ref</a></p>
 <p><code>name</code></p>
 <blockquote><p>Human readable name for this server (shown in the UI)</p>
 </blockquote>
@@ -269,7 +270,7 @@ is configured it's an implicit default.</p>
 <span class="na">default</span> <span class="o">=</span> <span class="s">yes</span>
 <span class="na">target</span> <span class="o">=</span> <span class="s">rsync://server/path/to/folder</span>
 </pre></div>
-<h3 id="[alternatives.-]"><code>[alternatives.*]</code></h3><p>This configures <a href="../../content/alts/" class="ref">Alternatives</a>.  It is repeated for
+<h3 id="[alternatives.-]"><code>[alternatives.*]</code></h3><p>This configures <a href="/docs/content/alts/">Alternatives :ref</a>.  It is repeated for
 each intended alternative.  The default behavior is that alternatives are
 disabled.</p>
 <p><code>name</code></p>

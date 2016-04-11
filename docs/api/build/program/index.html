@@ -164,14 +164,16 @@
       
       </ul>
 
-      <p>A build program is responsible for converting a <a href="../../db/obj/" class="ref">Source Object</a> into final build artifacts.  Typically such a build
-program implements two methods: <a href="produce-artifacts/" class="ref">produce_artifacts</a>
-and <a href="build-artifact/" class="ref">build_artifact</a>.</p>
-<p>The former should invoke <a href="declare-artifact/" class="ref">declare_artifact</a> for each
+      <p>A build program is responsible for converting a <a href="/docs/api/db/obj/">Source Object
+:ref</a> into final build artifacts.  Typically such a build
+program implements two methods: <a href="/docs/api/build/program/produce-artifacts/">produce_artifacts :ref</a>
+and <a href="/docs/api/build/program/build-artifact/">build_artifact :ref</a>.</p>
+<p>The former should invoke <a href="/docs/api/build/program/declare-artifact/">declare_artifact :ref</a> for each
 artifact that should be created from the source.  The builder will then
-invoke <a href="build-artifact/" class="ref">build_artifact</a> for each of these declared
+invoke <a href="/docs/api/build/program/build-artifact/">build_artifact :ref</a> for each of these declared
 artifacts if the builder determiend that the artifact needs to be built.</p>
-<p>For an example refer to the <a href="../../environment/add-build-program/" class="ref">add_build_program</a> documentation.</p>
+<p>For an example refer to the <a href="/docs/api/environment/add-build-program/">add_build_program
+:ref</a> documentation.</p>
 
 
       

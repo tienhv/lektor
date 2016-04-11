@@ -132,14 +132,15 @@
       
       </ul>
 
-      <p>Lektor uses the <a href="http://jinja.pocoo.org/" class="ext">Jinja2</a> templating language for
+      <p>Lektor uses the <a href="http://jinja.pocoo.org/">Jinja2 :ext</a> templating language for
 generating HTML out of your pages.  You do not need to understand Jinja2 to
 be able to generate beautiful websites but if you want to dive deep into the
 powers of the templating language then you can learn more about it by
-reading the <a href="http://jinja.pocoo.org/docs" class="ext">Jinja2 Documentation</a>.</p>
+reading the <a href="http://jinja.pocoo.org/docs">Jinja2 Documentation :ext</a>.</p>
 <div class="admonition admonition-info"><p>Templates are a very powerful component in Lektor.  A lot of documentation
-about the features of it can be found in the <a href="http://jinja.pocoo.org/docs" class="ext">Jinja2 Documentation</a> as well as the <a href="../api/templates/" class="ext">Lektor Template API
-Documentation</a>.</p></div><h2 id="template-folder-and-naming">Template Folder and Naming</h2><p>All templates are stored within the <code>templates/</code> folder.  Templates typically
+about the features of it can be found in the <a href="http://jinja.pocoo.org/docs">Jinja2 Documentation
+:ext</a> as well as the <a href="/docs/api/templates/">Lektor Template API
+Documentation :ext</a>.</p></div><h2 id="template-folder-and-naming">Template Folder and Naming</h2><p>All templates are stored within the <code>templates/</code> folder.  Templates typically
 carry a <code>.html</code> extension.  The default naming convention which is used in
 Lektor is that the template name matches the model name.</p>
 <p>So if you have a model called <code>page</code> there would be a template named
@@ -157,15 +158,15 @@ evaluated in but the following are always available:</p>
 <tbody>
 <tr>
 <td><code>this</code></td>
-<td>The current <a href="../api/db/record/" class="ref">Record</a> that is being rendered.</td>
+<td>The current <a href="/docs/api/db/record/">Record :ref</a> that is being rendered.</td>
 </tr>
 <tr>
 <td><code>site</code></td>
-<td>The database <a href="../api/db/pad/" class="ref">Pad</a> that can be used to query the site.</td>
+<td>The database <a href="/docs/api/db/pad/">Pad :ref</a> that can be used to query the site.</td>
 </tr>
 <tr>
 <td><code>alt</code></td>
-<td>A string that identifies the <a href="../content/alts/" class="ref">Alternative</a> of the page.</td>
+<td>A string that identifies the <a href="/docs/content/alts/">Alternative :ref</a> of the page.</td>
 </tr>
 <tr>
 <td><code>config</code></td>
@@ -174,9 +175,9 @@ evaluated in but the following are always available:</p>
 </tbody>
 </table>
 <h2 id="the-first-template">The First Template</h2><p>So let's dive in making our first template.  In case you went through the
-<a href="../quickstart/" class="ref">Quickstart</a> you should already have an example model
+<a href="/docs/quickstart/">Quickstart :ref</a> you should already have an example model
 to work with called <code>page</code>, otherwise just add one with the format shown
-in the <a href="../models/" class="ref">Data Modelling Documentation</a>.</p>
+in the <a href="/docs/models/">Data Modelling Documentation :ref</a>.</p>
 <p>With that we can create a page template named <code>templates/page.html</code>:</p>
 <div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;layout.html&quot;</span> <span class="cp">%}</span>
 <span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}{{</span> <span class="nv">this.title</span> <span class="cp">}}{%</span> <span class="k">endblock</span> <span class="cp">%}</span>

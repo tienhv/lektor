@@ -155,7 +155,7 @@ assets/
 <h2 id="project-file">Project File</h2><p>The project file holds the main configuration of the project and is used to
 identify the project for the user interface.  The name does not matter but
 it needs to have the <code>.lektorproject</code> extension.  For more information about
-that see <a href="../file/" class="ref">Project File</a>.</p>
+that see <a href="/docs/project/file/">Project File :ref</a>.</p>
 <h2 id="folders">Folders</h2><h3 id="content/"><code>content/</code></h3><p>The content folder is named <code>content</code> and contains all the sources that are
 built into the final project.  Each folder within corresponds to a record
 and the data of it is stored in the file by the name <code>contents.lr</code> within
@@ -175,11 +175,11 @@ which is a Lektor content file.  All other files are considered attachments.</p>
       contents.lr
       thumbnail.png
 </code></pre>
-<p>The content folder is explained in detail in <a href="../../content/" class="ref">Content</a>.</p>
+<p>The content folder is explained in detail in <a href="/docs/content/">Content :ref</a>.</p>
 <h3 id="models/"><code>models/</code></h3><p>This is the bread and butter of what makes Lektor powerful.  The models define
 exactly how the data from the content folder should be processed.  The <code>models</code>
 folder contains a list of INI files that each correspond to a single model.</p>
-<p>For more information about this refer to the <a href="../../models/" class="ref">Data Modelling</a>
+<p>For more information about this refer to the <a href="/docs/models/">Data Modelling :ref</a>
 documentation.</p>
 <h3 id="templates/"><code>templates/</code></h3><p>Each model corresponds to a template from the <code>templates</code> folder.  So if you have a
 model named <code>page</code> the file named <code>page.html</code> from the templates folder will then
@@ -190,14 +190,14 @@ files they will appear as such in the final output.</p>
 <div class="admonition admonition-tip"><p>This folder is not just useful for static files that are stylesheets or
 scripts, but because it overlays the entire website you can also use it to
 store things such as <code>favicon.ico</code>, <code>.htaccess</code> or similar things.</p></div><h3 id="flowblocks/"><code>flowblocks/</code></h3><p>The <code>flowblocks</code> folder contains models for blocks that are used by the
-<a href="../../content/flow/" class="ref">Flow System</a>.  Flow blocks split a part of a page into
+<a href="/docs/content/flow/">Flow System :ref</a>.  Flow blocks split a part of a page into
 smaller pieces so those could be individually designed.  They work similar to models
 but are contained within a field of a model.</p>
 <h3 id="packages/"><code>packages/</code></h3><p>For local plugin development the <code>packages/</code> folder can be used.  Any plugin
 stored in there is automatically activated in the system.</p>
 <h3 id="configs/"><code>configs/</code></h3><p>This folder (<code>configs/</code>) contains plugin specific config files.  All the
 files in there are named <code>&lt;plugin-id&gt;.ini</code>.</p>
-<h3 id="databags/"><code>databags/</code></h3><p>Lektor also supports <a href="../../content/databags/" class="ref">Data Bags</a> which go into a
+<h3 id="databags/"><code>databags/</code></h3><p>Lektor also supports <a href="/docs/content/databags/">Data Bags :ref</a> which go into a
 folder named <code>databags/</code>.  These are files with some general information
 that can be accessed from templates.  For instance you could store menus and
 navigations there, API keys and much more.  This is generally just information 

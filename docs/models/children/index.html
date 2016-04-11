@@ -162,8 +162,12 @@ inversed.</li>
 when it really has not.  This can be a query expression and the result
 is then used as the children of the model.  This for instance can be
 used to implement categories with filtering.</li>
+<li><code>hidden</code>: if this is set it can override the parent's hidden flag for
+all children.  This is particularly useful if you want to have a folder
+for error pages or other special pages where the parent itself should not
+be rendered but all children are.  The default is not set.</li>
 </ul>
-<h2 id="child-slug-behavior">Child Slug Behavior</h2><p>Slugs are the URL paths or more correctly: parts of it.  The URL paths
+<div class="admonition admonition-info"><p>The <code>hidden</code> flag was added in Lektor 2.0</p></div><h2 id="child-slug-behavior">Child Slug Behavior</h2><p>Slugs are the URL paths or more correctly: parts of it.  The URL paths
 always are the concatenation from the parent's page URL path plus the
 children's slug.  If not configured the default slug of children is the
 page's <code>_id</code>.  A slug can contain slashes to navigate into folders.  This
@@ -194,10 +198,15 @@ default.</li>
 <li><code>per_page</code>: this controls how many children are shown per page.  If
 pagination is enabled and this is not set, an implicit default of <code>20</code>
 is assumed.</li>
+<li><code>items</code>: if this is set to a query then the pagination's items will be
+overridden by it.  This can be used to make the pagination work over a
+subset of items.</li>
 </ul>
-<p>If pagination is enabled then the <a href="../../api/db/record/pagination/" class="ref">pagination attribute</a> of a record becomes available.  For
-more information have a look at the <a href="../../guides/pagination/" class="ref">pagination guide</a>.</p>
-
+<p>If pagination is enabled then the <a href="/docs/api/db/record/pagination/">pagination attribute
+:ref</a> of a record becomes available.  For
+more information have a look at the <a href="/docs/guides/pagination/">pagination guide
+:ref</a>.</p>
+<div class="admonition admonition-info"><p>The <code>items</code> property was added in Lektor 2.0</p></div>
 
       
 

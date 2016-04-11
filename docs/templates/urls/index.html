@@ -141,11 +141,11 @@
 generated are automatically relative to the current page so they will work
 correctly anywhere where you host the page.  They also deal with URL paths
 that have been changed through configuration.</p>
-<h2 id="url-filter"><code>url</code> Filter</h2><p>The <a href="../../api/templates/filters/url/" class="ref">url</a> filter is the most useful
+<h2 id="url-filter"><code>url</code> Filter</h2><p>The <a href="/docs/api/templates/filters/url/">url :ref</a> filter is the most useful
 filter for URL generation and it comes in two flavors.  It takes one optional
 argument which is the <code>alt</code> if it should differ from the current one (see
-<a href="../../content/alts/" class="ref">Alternatives</a>).  The filter can be applied to either
-a string or a <a href="../../api/db/record/" class="ref">Record</a> object.</p>
+<a href="/docs/content/alts/">Alternatives :ref</a>).  The filter can be applied to either
+a string or a <a href="/docs/api/db/record/">Record :ref</a> object.</p>
 <h3 id="basic-navigation">Basic Navigation</h3><p>This is an example of how to just link to some specific pages that exist.
 Because the path starts with a slash it will be treated as absolute path:</p>
 <div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav&quot;</span><span class="p">&gt;</span>
@@ -170,7 +170,8 @@ link to all children of a page:</p>
 <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
 <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </pre></div>
-<h2 id="asseturl-filter"><code>asseturl</code> Filter</h2><p>A second filter that is available is the <a href="../../api/templates/filters/asseturl/" class="ref">asseturl</a> filter.  It works similar to
+<h2 id="asseturl-filter"><code>asseturl</code> Filter</h2><p>A second filter that is available is the <a href="/docs/api/templates/filters/asseturl/">asseturl
+:ref</a> filter.  It works similar to
 <code>|url</code> but can only link to assets from the <code>assets/</code> folder.  However unlike
 <code>|url</code> it will append a dummy query string with a hash of the source asset.
 This ensures that when the asset changes it will be newly cached.</p>

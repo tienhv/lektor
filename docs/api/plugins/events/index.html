@@ -185,7 +185,8 @@
 respond to.  This gives a list of all of those events.</p>
 <h2 id="handling-events">Handling Events</h2><p>Events are handled by implementing a method with the name of the event and
 the prefix <code>on_</code> on the plugin and underscores instead of dashes.  So for
-instance if the event is called <a href="process-template-context/" class="ref">process-template-context</a> the method to implement is
+instance if the event is called <a href="/docs/api/plugins/events/process-template-context/">process-template-context
+:ref</a> the method to implement is
 <code>on_process_template_context</code>.  It's important to additionally <em>always</em>
 catch extra parameters in a <code>**extra</code> parameter so that the plugin does
 not break if an event starts sending additional parameters in the future.</p>

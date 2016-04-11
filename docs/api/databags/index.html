@@ -158,7 +158,7 @@
 Lektor website to load variables from simple key/value or JSON files.
 This is primarily useful to load translations, API keys and similar
 things that are needed in multiple templates.</p>
-<p>From within templates you can use the <a href="../templates/globals/bag/" class="ref">bag</a>
+<p>From within templates you can use the <a href="/docs/api/templates/globals/bag/">bag :ref</a>
 function to access databags.</p>
 <h2 id="supported-formats">Supported Formats</h2><p>Databags go into the <code>databags/</code> folder in your project.  There are two
 formats supported: key/value pairs as ini files as well as JSON files:</p>
@@ -184,7 +184,7 @@ merged together.  This means that if you have a file named <code>i18n.ini</code>
 with a section <code>[en]</code> and a key <code>CLICK_HERE</code> the path <code>i18n.en.CLICK_HERE</code>
 will target that key.  For JSON files further nesting is possible.  You
 can also just target a section and the return value will be a dictionary
-which can for instance be used with the <a href="../templates/filters/tojson/" class="ref">tojson</a>
+which can for instance be used with the <a href="/docs/api/templates/filters/tojson/">tojson :ref</a>
 filter.</p>
 <h2 id="example-databag">Example Databag</h2><p>This is a basic example of a data bag that contains configuration values
 for google maps.  It's stored in <code>databags/gmaps.ini</code>:</p>

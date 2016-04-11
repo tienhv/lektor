@@ -178,17 +178,18 @@
       
       </ul>
 
-      <p>The fields in <a href="../record/" class="ref">Records</a> use types to specify the behavior of
-the values.  Lektor comes with a wide range of <a href="../types/" class="ref">built-in field types</a> but it is possible to build your own by subclassing types
+      <p>The fields in <a href="/docs/api/db/record/">Records :ref</a> use types to specify the behavior of
+the values.  Lektor comes with a wide range of <a href="/docs/api/db/types/">built-in field types
+:ref</a> but it is possible to build your own by subclassing types
 class.  A type is instantiated with two parameters: a reference to the
-<a href="../../environment/" class="ref">Environment</a> that it belongs to and a dictionary
+<a href="/docs/api/environment/">Environment :ref</a> that it belongs to and a dictionary
 with configuration options from the ini file.</p>
-<p>A field type has to implement the <a href="value-from-raw/" class="ref">value_from_raw</a>
+<p>A field type has to implement the <a href="/docs/api/db/type/value-from-raw/">value_from_raw :ref</a>
 method and set the <code>widget</code> property as a very basic requirement.</p>
 <p>To create a type you need to create a subclass.  The name of the class needs
 to match the type name.  If you want to name your type <code>mything</code> then it
 needs to be called <code>MyThingType</code>.  Afterwards you can register it with the
-environment in <a href="../../plugins/events/setup-env/" class="ref">setup_env</a>:</p>
+environment in <a href="/docs/api/plugins/events/setup-env/">setup_env :ref</a>:</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lektor.types</span> <span class="kn">import</span> <span class="n">Type</span>
 
 <span class="k">class</span> <span class="nc">MyThingType</span><span class="p">(</span><span class="n">Type</span><span class="p">):</span>
@@ -200,9 +201,9 @@ environment in <a href="../../plugins/events/setup-env/" class="ref">setup_env</
 <span class="k">def</span> <span class="nf">setup_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">extra</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">add_type</span><span class="p">(</span><span class="n">MyThingType</span><span class="p">)</span>
 </pre></div>
-<p>For more information see <a href="value-from-raw/" class="ref">value_from_raw</a>.</p>
+<p>For more information see <a href="/docs/api/db/type/value-from-raw/">value_from_raw :ref</a>.</p>
 <p>There is a more complete example in the
-<a href="../../../plugins/howto/#adding-new-field-types" class="ref">Plugin How To</a>.</p>
+<a href="/docs/plugins/howto/#adding-new-field-types">Plugin How To :ref</a>.</p>
 
 
       

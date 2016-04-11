@@ -165,13 +165,13 @@
       <p>This method implements the actual publishing process.  It's supposed to
 implement a generator that reports the progress of the publishing.  If at any
 point something happens that would cause an error for the deployment this can
-be signalled with the <a href="../fail/" class="ref">fail</a> method which aborts the execution
+be signalled with the <a href="/docs/api/publisher/fail/">fail :ref</a> method which aborts the execution
 and reports an error.</p>
 <p>The parameters to the function are as follows:</p>
 <ul>
 <li><code>target_url</code>: a URL object with the parsed URL.  This object comes from the
 Werkzeug library and gives access to the individual parts of a URL by the
-exposed attributes (<a href="http://werkzeug.pocoo.org/docs/0.11/urls/" class="ext">Read about the URL object</a>).</li>
+exposed attributes (<a href="http://werkzeug.pocoo.org/docs/0.11/urls/">Read about the URL object :ext</a>).</li>
 <li><code>credentials</code>: an optional dictionary with command line supplied credentials.
 Note that these credentials might be completely absent and the keys which are
 provided might change with future versions of Lektor.</li>

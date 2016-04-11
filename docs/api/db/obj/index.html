@@ -215,9 +215,9 @@
       <p>Source objects is the common interface for all things that come out of the
 database.  There are two types of source objects:</p>
 <ul>
-<li><a href="../record/" class="ref">Records</a> which are pages and attachments from the
+<li><a href="/docs/api/db/record/">Records :ref</a> which are pages and attachments from the
 <code>contents/</code> folder.</li>
-<li><a href="../asset/" class="ref">Assets</a> which are files and directories from the
+<li><a href="/docs/api/db/asset/">Assets :ref</a> which are files and directories from the
 <code>assets/</code> folder.</li>
 </ul>
 <p>Whatever object you have in hands that comes from the database, they will
@@ -235,7 +235,7 @@ in the path.  The part after the at sign is called the “virtual path”.</p>
 <p>For instance in the below example the canonical path for the object would be
 the record's path + <code>@source</code>.  So if the record was <code>/hello</code> then the
 path would be <code>/hello@source</code>.  The true base record it belongs to can be
-referenced from the <a href="record/" class="ref">record</a> property.</p>
+referenced from the <a href="/docs/api/db/obj/record/">record :ref</a> property.</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lektor.sourceobj</span> <span class="kn">import</span> <span class="n">VirtualSourceObject</span>
 <span class="kn">from</span> <span class="nn">lektor.utils</span> <span class="kn">import</span> <span class="n">build_url</span>
 
@@ -254,8 +254,9 @@ referenced from the <a href="record/" class="ref">record</a> property.</p>
     <span class="k">def</span> <span class="nf">url_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">build_url</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">record</span><span class="o">.</span><span class="n">url_path</span><span class="p">,</span> <span class="s1">&#39;source.txt&#39;</span><span class="p">])</span>
 </pre></div>
-<p>For more information see <a href="../../environment/add-build-program/" class="ref">add-build-program</a> as well as
-<a href="../../environment/virtualpathresolver/" class="ref">virtualpathresolver</a>.</p>
+<p>For more information see <a href="/docs/api/environment/add-build-program/">add-build-program
+:ref</a> as well as
+<a href="/docs/api/environment/virtualpathresolver/">virtualpathresolver :ref</a>.</p>
 
 
       

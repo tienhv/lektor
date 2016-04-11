@@ -214,7 +214,7 @@ threads you have to create a separate pad for each thread.</p>
 command line scripts.</p>
 <h2 id="template-usage">Template Usage</h2><p>A ready-configured pad is always available under the <code>site</code> name which
 allows you to easily discover other pages.  Here a basic example of
-how to do this through the <a href="get/" class="ref">get</a> method:</p>
+how to do this through the <a href="/docs/api/db/pad/get/">get :ref</a> method:</p>
 <div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">set</span> <span class="nv">root</span> <span class="o">=</span> <span class="nv">site.get</span><span class="o">(</span><span class="s1">&#39;/&#39;</span><span class="o">)</span> <span class="cp">%}</span>
 <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">this.title</span> <span class="cp">}}</span> | <span class="cp">{{</span> <span class="nv">root.title</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
 </pre></div>
@@ -230,8 +230,8 @@ Instead you can get access to the current pad from the active context:</p>
 will not be the case when the plugin is currently being initialized for
 instance.</p>
 <h2 id="manual-pad-creation">Manual Pad Creation</h2><p>If you want to work with the database from a script, you can create a
-pad from the <a href="../../environment/" class="ref">Environment</a> with the help of
-the <a href="../../environment/new-pad/" class="ref">new_pad</a> method:</p>
+pad from the <a href="/docs/api/environment/">Environment :ref</a> with the help of
+the <a href="/docs/api/environment/new-pad/">new_pad :ref</a> method:</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lektor.project</span> <span class="kn">import</span> <span class="n">Project</span>
 
 <span class="n">project</span> <span class="o">=</span> <span class="n">Project</span><span class="o">.</span><span class="n">discover</span><span class="p">()</span>

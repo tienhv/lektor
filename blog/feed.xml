@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">The Transcript</title>
   <id>urn:uuid:64152ecd-6cf3-3272-bc5d-91d64ac36562</id>
-  <updated>2016-03-17T00:00:00Z</updated>
+  <updated>2016-04-11T00:00:00Z</updated>
   <link href="https://www.getlektor.com/blog/" />
   <link href="https://www.getlektor.com/blog/feed.xml" rel="self" />
   <author>
@@ -10,6 +10,82 @@
   </author>
   <subtitle type="text">Lektor's blog</subtitle>
   <generator uri="https://github.com/ajdavis/lektor-atom" version="0.1">Lektor Atom Plugin</generator>
+  <entry xml:base="https://www.getlektor.com/blog/2016/4/lektor-2-released/">
+    <title type="text">Lektor 2.0 Released</title>
+    <id>urn:uuid:40895cb3-680d-330a-a414-9b65e72990d7</id>
+    <updated>2016-04-11T00:00:00Z</updated>
+    <link href="https://www.getlektor.com/blog/2016/4/lektor-2-released/" />
+    <author>
+      <name>Armin Ronacher</name>
+    </author>
+    <content type="html">
+&lt;div class=&quot;page-banner page-banner-500&quot; style=&quot;background-image: url(/blog/2016/4/lektor-2-released/banner.jpg)&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;text-block text-block-default&quot;&gt;
+  &lt;p&gt;After quite a bit of wait, I'm happy to announce the 2.0 release of Lektor.
+Some things that previously were supposed to go into this release were pushed
+out a bit more because the wait just was too long and quite a few features
+were already in this release.&lt;/p&gt;
+&lt;p&gt;Here is the changelog of what's in this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;_discoverable&lt;/code&gt; system field which controls if a page should show
+up in &lt;code&gt;children&lt;/code&gt;.  The default is that a page is discoverable.  Setting it
+to &lt;code&gt;False&lt;/code&gt; means in practical terms that someone needs to know the URL as
+all collection operations will not return it.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;for_page&lt;/code&gt; function to pagination that returns the pagiantion for a
+specific page.&lt;/li&gt;
+&lt;li&gt;Make pagination next_page and prev_page be None on the edges.&lt;/li&gt;
+&lt;li&gt;Allow plugins to provide publishers.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;|markdown&lt;/code&gt; filter.&lt;/li&gt;
+&lt;li&gt;Added French translations.&lt;/li&gt;
+&lt;li&gt;Unicode filenames as final build artifacts are now explicitly disallowed.&lt;/li&gt;
+&lt;li&gt;Serve up a 404.html as an error page in the dev server.&lt;/li&gt;
+&lt;li&gt;Improvements to the path normalization and alt handling.  This should support
+URL generation in more complex cases between alts now.&lt;/li&gt;
+&lt;li&gt;Show a clearer error message when URL generation fails because a source
+object is virtual (does not have a path).&lt;/li&gt;
+&lt;li&gt;Empty text is now still valid markdown.&lt;/li&gt;
+&lt;li&gt;Lektor clean now loads the plugins as well.&lt;/li&gt;
+&lt;li&gt;Basic support for type customization.&lt;/li&gt;
+&lt;li&gt;Fields that are absent in a content file from an alternative are now pulled
+from the primary content file.&lt;/li&gt;
+&lt;li&gt;Development server now resolves index.html for assets as well.&lt;/li&gt;
+&lt;li&gt;Markdown processing now correctly adjusts links relative to where the
+rendered output is rendered.&lt;/li&gt;
+&lt;li&gt;Added Dutch translations.&lt;/li&gt;
+&lt;li&gt;Added Record.get_siblings()&lt;/li&gt;
+&lt;li&gt;Added various utilties: build_url, join_path, parse_path&lt;/li&gt;
+&lt;li&gt;Added support for virtual paths and made pagination work with it.&lt;/li&gt;
+&lt;li&gt;Added support for Query.distinct&lt;/li&gt;
+&lt;li&gt;Add support for pagination url resolving on root URL.&lt;/li&gt;
+&lt;li&gt;Server information can now also contain extra key/value pairs that
+can be used by publishers to affect the processing.&lt;/li&gt;
+&lt;li&gt;The thumbnails will now always have the correct width and height set
+as an attribute.&lt;/li&gt;
+&lt;li&gt;added datetime type&lt;/li&gt;
+&lt;li&gt;added support for the process_image utility functions so that plugins
+can use it directly.&lt;/li&gt;
+&lt;li&gt;added support for included_assets and excluded_assets in the project file.&lt;/li&gt;
+&lt;li&gt;added Spanish translations.&lt;/li&gt;
+&lt;li&gt;added Japanese translations.&lt;/li&gt;
+&lt;li&gt;added support for discovering existing alts of sources.&lt;/li&gt;
+&lt;li&gt;added support for image cropping.&lt;/li&gt;
+&lt;li&gt;added preliminary support for publishing on windows.&lt;/li&gt;
+&lt;li&gt;children and attachments can now have a hidden flag configured explicitly.
+Attachments will also no longer inherit the hidden flag of the parent
+record as that is not a sensible default.&lt;/li&gt;
+&lt;li&gt;changed internal sqlite consistency mode to improve performance on HDDs.&lt;/li&gt;
+&lt;li&gt;allow SVG files to be treated as images.  This is something that does not
+work in all situations yet (in particular thumbnailing does not actually
+do anything for those)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As always you can install the release as mentioned in the release notes.
+If you had a previous version of Lektor the install process should auto
+upgrade.  If you use the OS X desktop build, just drag the new application over
+the already existing one.&lt;/p&gt;
+
+&lt;/div&gt;</content>
+  </entry>
   <entry xml:base="https://www.getlektor.com/blog/2016/3/lektor-at-rails-girls-summer-of-code/">
     <title type="text">Lektor at Rails Girls Summer of Code 2016</title>
     <id>urn:uuid:284e765d-d6b2-37e9-89c0-f79635efbe8c</id>
@@ -114,14 +190,14 @@ source tree.  For instance you can build feeds, blog archives etc.&lt;/li&gt;
 
 &lt;div class=&quot;text-block text-block-default&quot;&gt;
   &lt;p&gt;Open Source projects need websites, that's a given, and one of the most popular
-ways to host them these days is &lt;a href=&quot;https://pages.github.com/&quot; class=&quot;ext&quot;&gt;GitHub Pages&lt;/a&gt;.
-It's a free service provided by &lt;a href=&quot;https://github.com/&quot; class=&quot;ext&quot;&gt;GitHub&lt;/a&gt; which allows
+ways to host them these days is &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages :ext&lt;/a&gt;.
+It's a free service provided by &lt;a href=&quot;https://github.com/&quot;&gt;GitHub :ext&lt;/a&gt; which allows
 hosts a git repository as a website on a subdomain of &lt;code&gt;github.io&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Wouldn't it be nice if you could easily host Lektor projects on there?  Turns
-out you can with the help of &lt;a href=&quot;https://travis-ci.org/&quot; class=&quot;ext&quot;&gt;Travis-CI&lt;/a&gt;.  Because
+out you can with the help of &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis-CI :ext&lt;/a&gt;.  Because
 Lektor has built-in support for deploying to GitHub Pages pairing up the three
 is a breeze.&lt;/p&gt;
-&lt;p&gt;We &lt;a href=&quot;../../../../docs/deployment/travisci/&quot; class=&quot;ref&quot;&gt;created a guide&lt;/a&gt; and also recorded
+&lt;p&gt;We &lt;a href=&quot;/docs/deployment/travisci/&quot;&gt;created a guide :ref&lt;/a&gt; and also recorded
 a screencast that goes with it:&lt;/p&gt;
 &lt;iframe width=&quot;100%&quot; height=410 frameborder=&quot;0&quot; allowfullscreen=&quot;allowfullscreen&quot;
   src=&quot;https://www.youtube.com/embed/3pj_EyZIL5A?autoplay=0&amp;fs=1&quot;&gt;
@@ -194,7 +270,7 @@ Desktop version or maybe in the future use a cloud hosted version.&lt;/p&gt;
 &lt;h2 id=&quot;project-layout&quot;&gt;Project Layout&lt;/h2&gt;&lt;p&gt;To get an idea how it works, you can have a look at the &lt;a href=&quot;https://github.com/lektor/lektor-website/&quot;&gt;github repository of
 this website&lt;/a&gt; which contains the
 project for this website and blog and have a look at the introduction
-documentation: &lt;a href=&quot;../../../../docs/quickstart/&quot; class=&quot;ref&quot;&gt;Getting Started&lt;/a&gt;.  You can
+documentation: &lt;a href=&quot;/docs/quickstart/&quot;&gt;Getting Started :ref&lt;/a&gt;.  You can
 also find a screencast there.&lt;/p&gt;
 &lt;p&gt;On a very basic level Lektor takes &lt;code&gt;.lr&lt;/code&gt; files which are basic text files
 with a super simple format and generates out HTML files.  The &lt;code&gt;.lr&lt;/code&gt; files
@@ -211,8 +287,8 @@ elaborate ones if you want to build portfolio sites.  For instance you could
 set up models for your projects and then access that data in the templates.&lt;/p&gt;
 &lt;p&gt;The content files are stored in folders in a tree like structure and at any
 level you can add other files as attachments:&lt;/p&gt;
-&lt;div class=&quot;screenshot-frame&quot;&gt;&lt;img src=&quot;structure.png&quot;&gt;&lt;/div&gt;&lt;h2 id=&quot;an-open-source-project&quot;&gt;An Open Source Project&lt;/h2&gt;&lt;p&gt;Lektor is available under &lt;a href=&quot;../../../../license/&quot;&gt;a BSD license&lt;/a&gt; and run as a
-community Open Source project &lt;a href=&quot;https://github.com/lektor/lektor/&quot; class=&quot;ext&quot;&gt;on github&lt;/a&gt;.
+&lt;div class=&quot;screenshot-frame&quot;&gt;&lt;img src=&quot;structure.png&quot;&gt;&lt;/div&gt;&lt;h2 id=&quot;an-open-source-project&quot;&gt;An Open Source Project&lt;/h2&gt;&lt;p&gt;Lektor is available under &lt;a href=&quot;/license/&quot;&gt;a BSD license&lt;/a&gt; and run as a
+community Open Source project &lt;a href=&quot;https://github.com/lektor/lektor/&quot;&gt;on github :ext&lt;/a&gt;.
 The build system is written in Python, the UI in JavaScript with React and
 the GUI components use Electron.&lt;/p&gt;
 &lt;h2 id=&quot;feedback-appreciated&quot;&gt;Feedback Appreciated&lt;/h2&gt;&lt;p&gt;Lektor took two attempts to get into a usable application and I'm sure that

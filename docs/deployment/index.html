@@ -77,6 +77,9 @@
           <li><a href="/docs/deployment/ghpages/">GitHub Pages</a>
             
         
+          <li><a href="/docs/deployment/glpages/">GitLab Pages</a>
+            
+        
           <li><a href="/docs/deployment/rsync/">rsync</a>
             
         
@@ -135,7 +138,8 @@
 
       <p>A website is only a website if other people can look at it.  While you are
 developing locally that's not really all that helpful.  So how do you get
-your changes up to your favorite web host?  This is where <a href="../cli/deploy/" class="ref">lektor deploy</a> comes in.</p>
+your changes up to your favorite web host?  This is where <a href="/docs/cli/deploy/">lektor deploy
+:ref</a> comes in.</p>
 <h2 id="deploying-in-two-steps:">Deploying in Two Steps:</h2><p>Deploying a website in Lektor is a two step process:</p>
 <ol>
 <li>build</li>
@@ -173,7 +177,7 @@ to set it as default.  Here is an example:</p>
 <span class="na">default</span> <span class="o">=</span> <span class="s">yes</span>
 <span class="na">target</span> <span class="o">=</span> <span class="s">rsync://server/path/to/folder</span>
 </pre></div>
-<p>To trigger a deploy you can use the <a href="../cli/deploy/" class="ref">deploy</a> command:</p>
+<p>To trigger a deploy you can use the <a href="/docs/cli/deploy/">deploy :ref</a> command:</p>
 <pre><code>$ lektor deploy production
 </code></pre>
 <p>Or because it's the default server, you can just do this:</p>
@@ -194,13 +198,13 @@ people get access to your server.  Alternatively you can also provide username
 and password through the command line or environment variables.</p>
 <p>The following targets are supported for the <code>target</code> field:</p>
 <ul>
-<li><a href="rsync/">rsync</a></li>
-<li><a href="ftp/">FTP</a></li>
-<li><a href="ghpages/">GitHub Pages</a></li>
+<li><a href="/docs/deployment/rsync/">rsync</a></li>
+<li><a href="/docs/deployment/ftp/">FTP</a></li>
+<li><a href="/docs/deployment/ghpages/">GitHub Pages</a></li>
 </ul>
 <p>In addition, third-party plugins are available for these targets:</p>
 <ul>
-<li><a href="https://github.com/spenczar/lektor-s3" class="ext">S3</a></li>
+<li><a href="https://github.com/spenczar/lektor-s3">S3 :ext</a></li>
 </ul>
 <h2 id="manual-deployments">Manual Deployments</h2><p>If you want to manually deploy something through the favorite tool of yours
 you can do that easily as well.  For instance if you want to deploy to S3
@@ -245,12 +249,26 @@ publish button that can be used to send the changes up.</p>
             <div class="col-md-6 child">
               <h4>
                 <i class="glyphicon glyphicon-list-alt"></i>
+                <a href="/docs/deployment/glpages/">GitLab Pages</a>
+              </h4>
+              
+                <p class="summary">Deploys to GitLab Pages.</p>
+              
+            </div>
+            
+            <div class="col-md-6 child">
+              <h4>
+                <i class="glyphicon glyphicon-list-alt"></i>
                 <a href="/docs/deployment/rsync/">rsync</a>
               </h4>
               
                 <p class="summary">Automatic deployments with SSH and rsync.</p>
               
             </div>
+            
+          </div>
+        
+          <div class="row">
             
             <div class="col-md-6 child">
               <h4>

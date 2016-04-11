@@ -173,13 +173,13 @@ to adjust the slug.</p>
 for all models automatically and overrides the slug explicitly.  This is
 particularly useful to force a slug that could not be represented on the file
 system (for instance because it should contain a slash) or because you want
-to change the slug for a different <a href="../alts/" class="ref">Alternative</a>.  As
+to change the slug for a different <a href="/docs/content/alts/">Alternative :ref</a>.  As
 an example a page translated to German might want to translate the slug as well.</p>
 <h3 id="implied-slug-configuration">Implied Slug Configuration</h3><p>The last part is a system that controls the implied slugs.  In particular it
 means that the model of the parent page can override the default slug for all
 of the children below it.  This for instance can be used to automatically add
 the date of a blog post into the slug.  For more information about this
-feature see <a href="../../models/children/" class="ref">Children &amp; Pagination</a>.</p>
+feature see <a href="/docs/models/children/">Children &amp; Pagination :ref</a>.</p>
 <h2 id="slugs-containing-slashes">Slugs Containing Slashes</h2><p>Slugs can indeed contain slashes. It's perfectly valid for a page to have 
 <code>2015/5/demo</code> as slug, and it will still be incorporated into URLs as described
 above.  What's not possible is for a page to pretend that it belongs to a 
@@ -219,7 +219,8 @@ an absolute or fully canonical (external) URL.  For instance sitemaps or Atom
 feeds do not work with relative URLs.  In this case the absolute URL path has
 to be configured.</p>
 <p>You can pick the default for URL generation in the project configuration.
-For more information read about the <a href="../../project/file/#[project]" class="ref">Project Configuration</a>.</p>
+For more information read about the <a href="/docs/project/file/#[project]">Project Configuration
+:ref</a>.</p>
 <p>The default of <code>relative</code>, a relative URL style, means that you can deploy a
 website to a sub folder without any configuration, however most likely custom
 404 pages will fail to find the needed assets.  Fully canonical URLs are not

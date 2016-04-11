@@ -185,7 +185,8 @@
 to inject values directly into the template context.  The context is always
 provided and is a dictionary that can be modified.</p>
 <p>What's important to know that this is not the only way to modify the template
-context.  Another one is to modify the underlying <a href="../../../environment/jinja-env/" class="ref">Jinja Environment</a> on the environment directly.  The
+context.  Another one is to modify the underlying <a href="/docs/api/environment/jinja-env/">Jinja Environment
+:ref</a> on the environment directly.  The
 difference is that the globals from the <code>jinja_env</code> are available in <em>all</em>
 templates whereas the modified template context is only available in the
 toplevel template.  This becomes apparent when you are dealing with imported

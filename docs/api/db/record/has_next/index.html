@@ -229,15 +229,15 @@
 <p>If the parent record has pagination enabled, then use the pagination query to
 filter and order the children. Otherwise, the parent's standard configuration
 for children is used.
-See <a href="../../../../guides/pagination/" class="ref">the pagination guide</a> and the
-<a href="../../../../guides/page-order/" class="ref">page order guide</a>.</p>
+See <a href="/docs/guides/pagination/">the pagination guide :ref</a> and the
+<a href="/docs/guides/page-order/">page order guide :ref</a>.</p>
 <h2 id="example">Example</h2><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">if</span> <span class="nv">this.has_next</span><span class="o">()</span> <span class="cp">%}</span>
   <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">this.get_siblings</span><span class="o">()</span><span class="nv">.next_page</span><span class="o">|</span><span class="nf">url</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="p">&gt;</span>next<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is the last entry.
 <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
 </pre></div>
-<p>See also: <a href="../has_prev/" class="ref">has_prev</a> and <a href="../get_siblings/" class="ref">get_siblings</a>.</p>
+<p>See also: <a href="/docs/api/db/record/has_prev/">has_prev :ref</a> and <a href="/docs/api/db/record/get_siblings/">get_siblings :ref</a>.</p>
 
 
       

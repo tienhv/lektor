@@ -77,6 +77,9 @@
           <li><a href="/docs/deployment/ghpages/">GitHub Pages</a>
             
         
+          <li><a href="/docs/deployment/glpages/">GitLab Pages</a>
+            
+        
           <li><a href="/docs/deployment/rsync/">rsync</a>
             
         
@@ -146,11 +149,11 @@
       <p>For certain websites it can be interesting to use
 <a href="https://travis-ci.org/">Travis-CI</a> to automatically deploy the latest version
 of a website from a github repository.  This is particularly useful when
-coupled with the <a href="../ghpages/" class="ref">GitHub Pages</a> deployment method which is
+coupled with the <a href="/docs/deployment/ghpages/">GitHub Pages :ref</a> deployment method which is
 what we're going to cover in this guide.  But you can easily adjust it to
 any other method.</p>
 <p>This assumes you already signed up for Travis-CI.  If you have not, just
-head to <a href="https://travis-ci.org/" class="ext">travis-ci.org</a> and sign up with your
+head to <a href="https://travis-ci.org/">travis-ci.org :ext</a> and sign up with your
 GitHub account.</p>
 <p>This guide is also available as a 7 minute screencast:</p>
 <iframe width="100%" height=410 frameborder="0" allowfullscreen="allowfullscreen"
@@ -177,7 +180,8 @@ in the project file would be to use <code>ghpages+https</code> like this:</p>
 <code>gh-pages</code> branch and the website updates.  We do however still need to
 configure the access credentials.  We will get to that.</p>
 <h2 id="enabling-travis">Enabling Travis</h2><p>So now that we have all that configured we need to tell travis to build the
-repository.  For that just head to your <a href="https://travis-ci.org/profile" class="ext">Travis-CI Profile</a> and enable the repository.  If it does not
+repository.  For that just head to your <a href="https://travis-ci.org/profile">Travis-CI Profile
+:ext</a> and enable the repository.  If it does not
 show up yet, you can force a sync with the click of a button.</p>
 <h2 id="access-credentials">Access Credentials</h2><p>So how do you safely provide your credentials?  Lektor accepts username and
 password for the <code>ghpages+https</code> transport via the <code>LEKTOR_DEPLOY_USERNAME</code>
@@ -188,12 +192,13 @@ thing you need to be careful with is that they still give access to your entire
 account!</p>
 <p>To solve this problem we recommend two things:</p>
 <ol>
-<li><a href="https://github.com/settings/tokens" class="ext">Create a personal access token</a>
+<li><a href="https://github.com/settings/tokens">Create a personal access token :ext</a>
 and use that instead.  Just provide the token instead of your password on
 sign-in.  This makes it easily possible to just revoke that token if
 something goes wrong.  Note that you only need the <code>repo</code> scope for this
 to work.  This also works if you have 2FA activated on an account.</li>
-<li><a href="https://developer.github.com/guides/managing-deploy-keys/#machine-users" class="ext">Create a deployment (machine) user</a>.
+<li><a href="https://developer.github.com/guides/managing-deploy-keys/#machine-users">Create a deployment (machine) user
+:ext</a>.
 This allows you to use a user that is exclusively used for just the
 purpose of updating the website.</li>
 </ol>
@@ -202,14 +207,15 @@ commit.</p>
 <div class="admonition admonition-warning"><p>When copy/pasting username and password into travis please ensure that
 you do not copy any leading or trailing whitespace with it.  This will not
 just break the build but also reveal the password in the process.  For
-more information see <a href="https://github.com/travis-ci/travis-ci/issues/4139" class="ext">travis-ci#4139</a>.</p></div><h2 id="committer-information">Committer Information</h2><p>By default the commits to the <code>gh-pages</code> branch will be authored by a user
+more information see <a href="https://github.com/travis-ci/travis-ci/issues/4139">travis-ci#4139
+:ext</a>.</p></div><h2 id="committer-information">Committer Information</h2><p>By default the commits to the <code>gh-pages</code> branch will be authored by a user
 named “Lektor Bot”.  If you want to override this you can export the
 <code>GIT_COMMITTER_NAME</code> and <code>GIT_COMMITTER_EMAIL</code> environment variables and
 set them to something else.  This is best done in the travis settings.</p>
 <h2 id="private-repositories">Private Repositories</h2><p>If you are using private repositories you will need the commercial version of
 travis.  It has the advantage that you can also set up SSH keys on there which
-means that authentication becomes easier.  For more information see <a href="https://docs.travis-ci.com/user/private-dependencies/" class="ext">Private
-Dependencies</a> in
+means that authentication becomes easier.  For more information see <a href="https://docs.travis-ci.com/user/private-dependencies/">Private
+Dependencies :ext</a> in
 the Travis CI documentation.</p>
 <h2 id="speeding-up-builds-with-caching">Speeding up Builds with Caching</h2><p>In the default setting Travis will have to rebuild everything because between
 builds it does not cache the build results.  You can change this by enabling

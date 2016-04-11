@@ -148,18 +148,19 @@
 Lektor the virtual path feature is not implemented yet and a lot of this just
 does not apply.</p></div><p>Lektor attempts to map the paths from the content folder as closely as possible
 to the final URLs (at least in the default configuration).  There are various
-ways in which this can be customized (see <a href="../urls/" class="ref">URLs and Slugs</a>) and
+ways in which this can be customized (see <a href="/docs/content/urls/">URLs and Slugs :ref</a>) and
 there are situations in which Lektor needs to render out content that does not
 actually directly correspond to a path on the file system.</p>
 <p>Here we try to explain how the path system in Lektor works and what it means.</p>
-<h2 id="what-is-a-path">What is a Path</h2><p>A path in Lektor is a string that uniquely identifies a <a href="../../api/db/obj/" class="ref">Source Object</a>.  For the most part these directly point to
+<h2 id="what-is-a-path">What is a Path</h2><p>A path in Lektor is a string that uniquely identifies a <a href="/docs/api/db/obj/">Source Object
+:ref</a>.  For the most part these directly point to
 <code>content.lr</code> files or attachments therein.  These paths always use forward
 slashes, no matter on which platform Lektor runs.  So for instance if you
 have a file named <code>projects/my-project/contents.lr</code> then the path for this
 record will be <code>/projects/my-project</code>.  Thereby it does not matter if the
 slug or final URL was changed, the path is always the same.</p>
 <p>Lektor uses paths to refer to records by default in all cases.  This means that
-if you use the <a href="../../api/templates/filters/url/" class="ref">url filter</a> for instance
+if you use the <a href="/docs/api/templates/filters/url/">url filter :ref</a> for instance
 it will operate on paths and not URLs!</p>
 <p>But what about sources that do not directly correspond to something on the
 file system?  This is where virtual paths come in.  Virtual paths are
@@ -250,7 +251,8 @@ belong to the current page:</p>
 </tr>
 </tbody>
 </table>
-<h2 id="alternatives-and-paths">Alternatives and Paths</h2><p>If you have used Lektor a bit you might be wondering how <a href="../alts/" class="ref">Alternatives</a> work with paths.  The answer might be surprising but it's
+<h2 id="alternatives-and-paths">Alternatives and Paths</h2><p>If you have used Lektor a bit you might be wondering how <a href="/docs/content/alts/">Alternatives
+:ref</a> work with paths.  The answer might be surprising but it's
 basically that they don't really work with paths.  Alternatives are
 implemented on a level higher than paths.  If you have a page that exists
 in both German and English alternative then they will have the same path.

@@ -188,7 +188,7 @@ to perform dependency tracking, it needs to remember that there might be
 associated other artifacts and more.  All this information is tracked on the
 <code>Context</code> during a build of a single source.  At a later point the builder
 will look at the context to decide on further operations to perform.</p>
-<p>The current context can be discovered by calling the <a href="../get-ctx/" class="ref">get_ctx</a>
+<p>The current context can be discovered by calling the <a href="/docs/api/build/get-ctx/">get_ctx :ref</a>
 function which will return it.  If there is no artifact build ongoing then
 the return value will be <code>None</code>.</p>
 <h2 id="basic-example">Basic Example</h2><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lektor.context</span> <span class="kn">import</span> <span class="n">get_ctx</span>

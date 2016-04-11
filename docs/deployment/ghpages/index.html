@@ -79,6 +79,9 @@
             <ul></ul>
             
         
+          <li><a href="/docs/deployment/glpages/">GitLab Pages</a>
+            
+        
           <li><a href="/docs/deployment/rsync/">rsync</a>
             
         
@@ -142,7 +145,7 @@
 <li><code>ghpages+https://username/repository</code></li>
 </ul>
 <p>A popular way to host websites for Open Source projects is the GitHub pages.
-It's a free service provided by <a href="http://github.com/" class="ext">GitHub</a> which allows
+It's a free service provided by <a href="http://github.com/">GitHub :ext</a> which allows
 to host completely static websites through GitHub.</p>
 <p>The way this is implemented in Lektor currently is that Lektor will force-push
 a website into a repository of choice.  There are two ways to push it up:
@@ -157,7 +160,7 @@ environment variables.</p>
 <h2 id="credentials">Credentials</h2><p>This deployment method has two implementations: <code>ghpages</code> (also known as
 <code>ghpages+ssh</code>) which uses SSH and <code>ghpages+https</code> which uses HTTPS.  They
 use different methods for credentials.  For the SSH transport the same
-rules apply as for the <a href="../rsync/" class="ref">rsync deployment method</a>.  The HTTPS
+rules apply as for the <a href="/docs/deployment/rsync/">rsync deployment method :ref</a>.  The HTTPS
 transport on the other hand accepts <code>--username</code> and <code>--password</code> which
 override the values in the URL.</p>
 <h2 id="behavior">Behavior</h2><p>The way this deployment support works is that it commits a new commit into a
@@ -165,7 +168,7 @@ temporary location and pushes it into the <code>gh-pages</code> or <code>master<
 depending on the name of the repository.  If you push to <code>username.github.io</code>
 then it commits to <code>master</code>, otherwise to <code>gh-pages</code>.  This is consistent
 with behavior for GitHub Pages.</p>
-<h2 id="cname-support">CNAME Support</h2><p>If you want to use a <a href="https://en.wikipedia.org/wiki/CNAME" class="ext">CNAME</a> with
+<h2 id="cname-support">CNAME Support</h2><p>If you want to use a <a href="https://en.wikipedia.org/wiki/CNAME">CNAME :ext</a> with
 GitHub pages and Lektor you can provide the intended CNAME with the <code>?cname</code>
 parameter:</p>
 <div class="highlight"><pre><span></span><span class="k">[servers.production]</span>
@@ -173,13 +176,14 @@ parameter:</p>
 </pre></div>
 <p>For more information about how CNAMEs work with GitHub you can read about
 the feature in the GitHub help center:
-<a href="https://help.github.com/articles/adding-a-cname-file-to-your-repository/" class="ext">Adding a CNAME file to your repository</a>.</p>
+<a href="https://help.github.com/articles/adding-a-cname-file-to-your-repository/">Adding a CNAME file to your repository
+:ext</a>.</p>
 <h2 id="404-pages">404 Pages</h2><p>Per convention the file named <code>404.html</code> is used as placeholder if a page
 cannot be found.  You can create such a page by creating a <code>404.html/contents.lr</code>
 file.</p>
 <h2 id="automatic-deployments">Automatic Deployments</h2><p>If you want to use ghpages it's desirable to have this build automatically.
 This is easy to accomplish with the help of Travis-CI.  For more information
-see <a href="../travisci/" class="ref">Deploying with Travis-CI</a>.</p>
+see <a href="/docs/deployment/travisci/">Deploying with Travis-CI :ref</a>.</p>
 
 
       

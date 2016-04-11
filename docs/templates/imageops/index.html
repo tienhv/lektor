@@ -156,7 +156,8 @@ retina rendered background:</p>
 </pre></div>
 <h2 id="accessing-exif-data">Accessing EXIF Data</h2><p>Lektor can also give you access to a lot of the EXIF information that is stored
 in the images.  Not all EXIF information is available but the most common
-values are.  For the full list of attributes see <a href="../../api/db/record/exif/" class="ref">EXIF data</a>.</p>
+values are.  For the full list of attributes see <a href="/docs/api/db/record/exif/">EXIF data
+:ref</a>.</p>
 <p>Here an example that shows the camera information:</p>
 <div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;image&quot;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">image</span><span class="o">|</span><span class="nf">url</span> <span class="cp">}}</span><span class="s">&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
@@ -166,7 +167,7 @@ values are.  For the full list of attributes see <a href="../../api/db/record/ex
 <h2 id="generating-thumbnails">Generating Thumbnails</h2><p>While browsers are reasonably good at downscaling images themselves, you
 still need to transmit the entire image.  When you want smaller images it
 often makes sense to generate thumbnails automatically.  In Lektor each
-image provides the <a href="../../api/db/record/thumbnail/" class="ref">thumbnail</a> method.</p>
+image provides the <a href="/docs/api/db/record/thumbnail/">thumbnail :ref</a> method.</p>
 <p>It accepts the width and height of the target image.  If the height is not
 provided it will be scaled proportionally.  The return value can be converted
 into a URL with the <code>|url</code> filter:</p>

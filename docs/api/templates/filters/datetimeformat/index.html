@@ -181,7 +181,8 @@
       
       </ul>
 
-      <p>To format a proper date (this is created by the <a href="../../../../api/db/types/datetime/" class="ref">datetime</a> type) into a string this filter can
+      <p>To format a proper date (this is created by the <a href="/docs/api/db/types/datetime/">datetime
+:ref</a> type) into a string this filter can
 be used.  It will automatically format based on the language used by the
 current context which is based on the locale of the current alt.</p>
 <p>A different language can be provided with the <code>locale</code> parameter.</p>
@@ -212,7 +213,8 @@ current context which is based on the locale of the current alt.</p>
 </tbody>
 </table>
 <p>In addition to that format codes from the CLDR project can be used.  For
-more information see <a href="http://cldr.unicode.org/translation/date-time" class="ext">CLDR Date/Time Symbols</a>.</p>
+more information see <a href="http://cldr.unicode.org/translation/date-time">CLDR Date/Time Symbols
+:ext</a>.</p>
 <h2 id="examples">Examples</h2><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Date: <span class="cp">{{</span> <span class="nv">this.pub_date</span><span class="o">|</span><span class="nf">datetimeformat</span><span class="o">(</span><span class="s1">&#39;full&#39;</span><span class="o">)</span> <span class="cp">}}</span>
 </pre></div>
 <p>Or with custom CLDR format strings:</p>

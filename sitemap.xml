@@ -41,6 +41,7 @@
   <url><loc>https://www.getlektor.com/docs/deployment/</loc></url>
   <url><loc>https://www.getlektor.com/docs/deployment/ftp/</loc></url>
   <url><loc>https://www.getlektor.com/docs/deployment/ghpages/</loc></url>
+  <url><loc>https://www.getlektor.com/docs/deployment/glpages/</loc></url>
   <url><loc>https://www.getlektor.com/docs/deployment/rsync/</loc></url>
   <url><loc>https://www.getlektor.com/docs/deployment/travisci/</loc></url>
   <url><loc>https://www.getlektor.com/docs/plugins/</loc></url>
@@ -262,6 +263,7 @@
   <url><loc>https://www.getlektor.com/docs/api/utils/url-to/</loc></url>
   <url><loc>https://www.getlektor.com/docs/search/</loc></url>
   <url><loc>https://www.getlektor.com/blog/</loc></url>
+  <url><loc>https://www.getlektor.com/blog/2016/4/lektor-2-released/</loc></url>
   <url><loc>https://www.getlektor.com/blog/2016/3/lektor-at-rails-girls-summer-of-code/</loc></url>
   <url><loc>https://www.getlektor.com/blog/2016/3/road-to-lektor-2/</loc></url>
   <url><loc>https://www.getlektor.com/blog/2015/12/travis-and-ghpages/</loc></url>

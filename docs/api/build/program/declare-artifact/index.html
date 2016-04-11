@@ -168,8 +168,9 @@
       
       </ul>
 
-      <p>This method is supposed to be called from <a href="../produce-artifacts/" class="ref">produce_artifacts</a>.  For each of these invocations the builder will
-later invoke the <a href="../build-artifact/" class="ref">build_artifact</a> function.</p>
+      <p>This method is supposed to be called from <a href="/docs/api/build/program/produce-artifacts/">produce_artifacts
+:ref</a>.  For each of these invocations the builder will
+later invoke the <a href="/docs/api/build/program/build-artifact/">build_artifact :ref</a> function.</p>
 <p>The parameters behave as follows:</p>
 <ul>
 <li><code>artifact_name</code>: the name of the final artifact that will be built.  This
@@ -178,7 +179,7 @@ automatically and should thus always use forward slashes.</li>
 <li><code>sources</code>: a list of source filenames that make up the artifact.  This will
 be tracked as main indication about how artifacts change.</li>
 <li><code>extra</code>: arbitrary extra information that is associated with the artifact so
-that <a href="../build-artifact/" class="ref">build_artifact</a> can use it.</li>
+that <a href="/docs/api/build/program/build-artifact/">build_artifact :ref</a> can use it.</li>
 </ul>
 
 

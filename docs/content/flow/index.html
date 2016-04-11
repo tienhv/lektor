@@ -145,23 +145,24 @@
       </ul>
 
       <p>Flow is a system in Lektor that allows you to have higher flexibility when
-creating pages.  The <a href="../../api/db/types/flow/" class="ref">Flow Type</a> field type
+creating pages.  The <a href="/docs/api/db/types/flow/">Flow Type :ref</a> field type
 that allows you to store multiple different formats of data within the same
 field each with its own template.</p>
 <p>This allows you to build complex pages made from individual components.</p>
 <h2 id="how-does-flow-work?">How does Flow Work?</h2><p>When you add a <code>flow</code> field to one of your models you essentially gain the
 ability to attach as many blocks as you want into this field.  Each block
-corresponds to a specific <a href="../../models/flow/" class="ref">Flow Block Model</a> and
+corresponds to a specific <a href="/docs/models/flow/">Flow Block Model :ref</a> and
 can render a separate template.</p>
 <p>This is a very powerful feature as it allows you to be very flexible in the
 designs you want to achieve for your website.  As an example, the
-<a href="../../../">Front Page</a> of this website uses many different blocks to
+<a href="/">Front Page</a> of this website uses many different blocks to
 implement the slideshow, feature list and more.</p>
 <p><img src="flow-admin.png" class="screenshot" alt=""></p>
 <h2 id="flow-block-models">Flow Block Models</h2><p>To use the <code>flow</code> type you need to define some blocks.  This works pretty
-much the same as with creating <a href="../../models/" class="ref">Data Models</a> except they
+much the same as with creating <a href="/docs/models/">Data Models :ref</a> except they
 go into the <code>flowblocks</code> folder and have slightly different parameters.</p>
-<p>For more information about this see <a href="../../models/flow/" class="ref">Flow Block Models</a>.</p>
+<p>For more information about this see <a href="/docs/models/flow/">Flow Block Models
+:ref</a>.</p>
 <h2 id="block-templating">Block Templating</h2><p>Flow blocks appear as elements of the flow type.  When it's rendered in a
 template it will render each block separately one after another and connect
 them with newlines.  These blocks can also manually be accessed however.

@@ -158,13 +158,13 @@
       
       </ul>
 
-      <p>This function returns the currently active <a href="../context/" class="ref">Build Context</a>
+      <p>This function returns the currently active <a href="/docs/api/build/context/">Build Context :ref</a>
 or <code>None</code> if no context is active.  This is the main method to access the
 context.  Generally the context is available if a build is active and <code>None</code>
 if not.  This means that if plugins only call that method in places where
 they know a build is access it's not necessary to check if the context is
 available.</p>
-<p>For more information: <a href="../context/" class="ref">Context</a>.</p>
+<p>For more information: <a href="/docs/api/build/context/">Context :ref</a>.</p>
 <h2 id="example">Example</h2><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lektor.context</span> <span class="kn">import</span> <span class="n">get_ctx</span>
 
 <span class="n">ctx</span> <span class="o">=</span> <span class="n">get_ctx</span><span class="p">()</span>
